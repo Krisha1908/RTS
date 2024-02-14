@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main
+        {
+            position: absolute;
+             top: 50%;
+             left: 50%;
+             transform: translate(-50%, -50%);
+        }
+        .rts
+        {
+            border: 13px solid blue;
+            height: 300px;
+            width: 500px;
+            font-size: 40px;
+            line-height: 280px;
+            text-align: center;
+        }
+        span
+        {
+            height: 100px;
+            width: 100px;
+            border: 1px solid blue;  
+            background-color: blue;
+            position: absolute;
+            left: 110px;
+            top: 500px;
+            animation-name: spanAnimation;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+        }
+        span:nth-child(1) {
+        top: 190%;
+        left: 10%;
+        animation-duration: 1s;
+      }
+      span:nth-child(2) {
+        top: 10%;
+        left: 10%;
+        animation-duration: 9s;
+      }
+      span:nth-child(3) {
+        top: 50%;
+        left: 40%;
+        animation-duration: 1s;
+      }
+      span:nth-child(4) {
+        top: 50%;
+        left: 400%;
+        animation-duration: 9s;
+      }
+        @keyframes spanAnimation
+        {
+            0%{ transform: scale(0) rotate(0deg);
+                opacity: 1;
+               }
+            100%
+            { transform: scale(1) rotate(360deg);
+                opacity: 0;
+                border-radius: 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <div class="main">
+    <div class="rts">Royal techosoft</div>
+    </div>
+</body>
+</html>

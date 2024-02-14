@@ -1,0 +1,156 @@
+POPS : procedure oriented programming language
+what is  the difference between POPS, OOPSl,
+1) pops follows top down approach
+2) pops is a function driven language
+3) pops is a data driven language: data is more important than the program
+4) pops is a sequential language : instructions are executed one after the other
+5) pops is a structured language : it follows structured programming
+
+eg:c, perl, fortran, cobol, pascal, basic, fortran, algol, lisp, prolog, ada, etc
+-------------------------
+oops:
+1) oops follows bottom up approach
+2) oops is an object driven language
+3) oops is an object oriented language : object is more important than the data
+4) oops is a non sequential language : instructions are not executed one after the other
+5) oops is a non structured language : it does not follow structured programming
+eg: c++, java, c#, vb.net, python, ruby, php, etc
+-------------------------------------------------
+OOPS : object oriented programming language
+
+class based approach
+
+iostream : input output stream
+
+
+
+
+                                        IOS  --> PARENT CLASS
+
+                           input                      output
+
+                                       iostream                                         
+
+
+
+
+//variable name declaration
+
+1)variable name must not contans space....
+2)
+
+
+
+
+operaotrs:
+
+1)arithmetic operators
+2)logical operators
+3)asinment operators
+4)relational operators / comparison operators 
+5)bitwise operators
+6)conditional operators
+7)increment and decrement operators
+8)sizeof operator
+
+
+
+oops concepts:
+1)encapsulation : binding data and functions together in form of class object is called encapsulation
+    class,object,constructor,destructor,access specifiers,member functions,member variables,static members,friend functions,friend classes,inline functions, this pointer, const keyword, mutable keyword, volatile keyword, virtual functions, pure virtual functions, abstract classes, etc
+2)abstraction
+3)inheritance
+4)polymorphism
+
+
+
+class and object:
+
+class : class is a user defined data type which contains data members and member functions
+       : class is group of data members and member functions
+       : class is a blue print of an object
+
+objecct : objecct is entity / identity of class        
+
+
+class       OBJECTS
+Vehicle     car, bike, bus, truck, etc
+School      student, teacher, principal, etc
+Fruit       Apple , mango, banana, etc
+
+
+vehile has car
+car is a vehicle
+School has student, 
+
+fruit has apple
+apple is a fruit
+
+
+struct
+keyword class...
+
+constructor: 
+constructor is a special function which has same name as class name
+constructor can not have return type
+const can have arguments
+const is called automatically when object is created
+
+use:
+used to initialize the data members of class [instance variables]
+used to allocate memory to the data members of class [instance variables]
+
+
+in cpp one class must have one constructor
+if developer will not write constructor then compiler will write default constructor
+
+types of constructor:
+1)default constructor
+2)parameterized constructor
+3)copy constructor
+
+
+Bank(){
+
+}
+
+INHERITANCE IN CPP 
+1)inheritance is a process of acquiring the properties of one class into another class
+child class can use properties of parent class this is called inheritance
+parent class can not use properties of child class
+
+reusablity of code
+1)single inheritance a --> B
+2)multilevel inheritance a --> b --> c
+3)multiple inheritance a --> b, c
+4)hierarchical inheritance 
+
+                                queen elizabeth
+
+                prince charles                   princess anne
+
+prince william      prince harry            peter phillips     zara phillips                                   
+
+
+5)hybrid inheritance
+combination of multiple and multilevel inheritance
+
+a -> 10 -> 5 
+
+
+polymorphism:
+poly means many morphism means forms
+many forms of a function is called polymorphism
+1)compile time polymorphism / static binding / early binding / 
+    function overloading
+2)run time polymorphism / dynamic binding / late binding / 
+    function overriding
+
+
+
+function overloading:
+same name of function create in same class but with different arguments called function overloading
+
+search(strig name)
+search(string name,int vari)
+search(string name, int vari, string color)

@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<style>
+    .first
+    {
+        border: 1px solid rgba(25,25,112);
+        background-color: rgba(25,25,112);
+        height: 15px;
+        width: 355px;
+        margin-top: -5px;
+    }
+     .logo
+    {
+        margin-left: 5px;
+        margin-top: 5px;
+        position: absolute;
+    
+    }
+    #location
+    {
+        font-size: 7px;
+        margin-top: 5px;
+        margin-left: 50px;
+        position: absolute;
+        color: white;
+    }
+    .hello
+    {
+        color: white;
+        font-size: 4px;
+        margin-top: 5px;
+        margin-left: 56px;
+        position: absolute;
+    }
+    .add
+    {
+        color: white;
+        font-size: 5px;
+        margin-top: 9px;
+        margin-left: 56px;
+        position: absolute;
+    }
+    .all
+    {
+       /* border: 1px solid black;*/
+        height: 10px;
+        width: 10px;
+        color:white;
+        font-size: 5px;
+        margin-top: 3px;
+        margin-left: 110px;
+    }
+    .flag
+    {
+        margin: -6px 250px;
+        position: absolute;
+    }
+    .lan
+    {
+        font-size: 5px;
+        margin-top: -6px;
+        margin-left: 257px;
+        position: absolute;
+        color: white;
+    }
+     .input
+     {
+        position: absolute;
+        font-size: 5px;
+        border:none;
+        margin-top: -8px;
+        margin-left: 121px;
+        width: 100px;
+     }
+     #search
+     {
+        color: white;
+        font-size: 5px;
+        position: absolute;
+        margin-top: -6px;
+        margin-left: 230px;
+     }
+     .Returns
+     {
+        font-size: 4px;
+        color: white;
+        margin-top: -9px;
+        margin-left: 283px;
+        position: absolute;
+     }
+     .order
+     {
+        font-size: 5px;
+        color: white;
+        margin-top: -5px;
+        margin-left: 283px;
+        position: absolute;
+     }
+     .cart
+     {
+        position: absolute;
+        margin-top: -6px;
+        margin-left: 343px;
+        font-size: 4px;
+        color: white;
+     }
+     #cart2
+     {
+        position: absolute;
+        margin-top: -8px;
+        margin-left: 334px;
+        color: white;
+        font-size: 8px;
+    }
+    #sign
+    {
+        color: white;
+        font-size: 5px;
+        position: absolute;
+        margin-top: -7px;
+        margin-left: 310px;
+        border: 1px solid rgba(0, 0, 0, 0.264);
+        background-color: rgba(0, 0, 0, 0.268);
+        border-radius: 2px;
+    }
+    .second
+    {
+        border: 1px solid rgba(0, 0, 139, 0.525);
+        background-color: rgba(0, 0, 139, 0.868);
+        height:9px;
+        width:355px;
+
+    }
+    #list
+    {
+        font-size: 6px;
+        position: absolute;
+        margin-top: 2px;
+        margin-left: 4px;
+        color: white;
+    }
+    .all2{
+        font-size: 5px;
+        margin-top: 2px;
+        margin-left: 12px;
+        position: relative;
+        color: white;
+    }
+    .TV
+    {
+        font-size: 5px;
+        margin-top: -10.5px;;
+        margin-left: 25px;
+        position: relative;
+        color: white;
+    }
+    .sell
+    {
+        font-size: 5px;
+        margin-top: -10.5px;;
+        margin-left: 67px;
+        position: relative;
+        color: white; 
+    }
+    .Deals
+    {
+        font-size: 5px;
+        margin-top: -10.5px;;
+        margin-left: 81px;
+        position: relative;
+        color: white; 
+    }
+    .best
+    {
+        font-size: 5px;
+        margin-top: -10.5px;;
+        margin-left: 115px;
+        position: relative;
+        color: white; 
+    }
+    .customer
+    {
+        font-size: 5px;
+        margin-top: -10.5px;;
+        margin-left: 145px;
+        position: relative;
+        color: white; 
+    }
+    .release
+    {
+        font-size: 5px;
+        margin-top: -10.5px;;
+        margin-left: 187px;
+        position: relative;
+        color: white; 
+    }
+    .prime
+    {
+        font-size: 5px;
+        margin-top: -10.5px;;
+        margin-left: 222px;
+        position: relative;
+        color: white; 
+    }
+    .pay
+    {
+        font-size: 5px;
+        margin-top: -10.5px;;
+        margin-left: 241px;
+        position: relative;
+        color: white; 
+    }
+    .launch
+    {
+        position: absolute;
+        margin-top: -11px;
+        margin-left: 305px;
+    }
+    .third
+    {
+        border: 1px solid gray;
+        background-color: gray;
+        height: 300px;
+        width: 355px;
+    }
+    .box1
+    {
+        border: 1 px solid red;
+        background-color: white;
+        position: absolute;
+        height: 100px;
+        width: 75px;
+        margin-top: 3px;
+        margin-left: 10px;
+    }
+    .box2
+    {
+        border: 1 px solid pink;
+        background-color: white;
+        position: absolute;
+        height: 100px;
+        width: 75px;
+        margin-top: 3px;
+        margin-left: 97px; 
+    }
+    .box3
+    {
+        border: 1 px solid green;
+        background-color: white;
+        position: absolute;
+        height: 100px;
+        width: 75px;
+        margin-top: 3px;
+        margin-left: 185px; 
+    }
+    .box4
+    {
+        border: 1 px solid blue;
+        background-color:  white;
+        position: absolute;
+        height: 30px;
+        width: 75px;
+        margin-top: 3px;
+        margin-left: 273px; 
+    }
+    .box5
+    {
+        border: 1 px solid green;
+        background-color: white;
+        position: absolute;
+        height: 100px;
+        width: 75px;
+        margin-top: 120px;
+        margin-left: 9px; 
+    }
+    .box6
+    {
+        border: 1 px solid green;
+        background-color: white;
+        position: absolute;
+        height: 100px;
+        width: 75px;
+        margin-top: 120px;
+        margin-left: 98px; 
+    }
+    .box7
+    {
+        border: 1 px solid green;
+        background-color: white;
+        position: absolute;
+        height: 100px;
+        width: 75px;
+        margin-top: 120px;
+        margin-left: 185px; 
+    }
+    .box8
+    {
+        border: 1 px solid green;
+        background-color: white;
+        position: absolute;
+        height: 100px;
+        width: 75px;
+        margin-top: 120px;
+        margin-left: 275px; 
+    }
+    #font1
+    {
+        color: black;
+        font-size: 5px;
+        position: absolute;
+        margin-top: 2px;
+        margin-left: 7px;
+    }
+    .img1
+    {
+        margin-top: 10px;
+        margin-left: 5px;
+        position: absolute;
+    }
+    .img2
+    {
+        margin-top: 10px;
+        margin-left: 40px;
+        position: absolute;
+    }
+    .img3
+    {
+        margin-top: 50px;
+        margin-left: 5px;
+        position: absolute;
+    
+    }
+    .img4
+    {
+        margin-top: 50px;
+        margin-left: 40px;
+        position: absolute;
+    
+    }
+    .img5
+    {
+        margin-top: -1px;
+        margin-left: 5px;
+        position: absolute;
+    }
+    .img6
+    {
+        margin-top: -1px;
+        margin-left: 40px;
+        position: absolute;
+    }
+    .img7
+    {
+        margin-top: 38px;
+        margin-left: 5px;
+        position: absolute;
+    
+    }
+    .img8
+    {
+        margin-top: 38px;
+        margin-left: 40px;
+        position: absolute;
+    
+    }
+
+
+    #cloth
+    {
+        font-size: 3px;
+        color: black;
+        margin-top: 37px;
+        margin-left: 5px;
+        position: absolute;
+    }
+    #foot
+    {
+        font-size: 3px;
+        color: black;
+        margin-top: 37px;
+        margin-left: 41px;
+        position: absolute;
+    }
+    #watch
+    {
+        font-size: 3px;
+        color: black;
+        margin-top: 77px;
+        margin-left:5px;
+        position: absolute;
+    }
+    #bag
+    {
+        font-size: 3px;
+        color: black;
+        margin-top: 77px;
+        margin-left:40px;
+        position: absolute;
+    }
+.mega
+{
+    font-size: 3px;
+        color: black;
+        margin-top: 90px;
+        margin-left:5px;
+        position: absolute;
+}
+#font2
+{
+    color: black;
+    font-size: 6px;
+    margin-top: 1px;
+    margin-left: 10px;
+}
+#font3
+{
+    color: black;
+    font-size: 5px;
+    margin-top: 1px;
+    margin-left: 10px;
+}
+.prime
+{
+margin-top: 0px;
+margin-left: 8px;
+}
+#Explore
+{
+        font-size: 3px;
+        color: black;
+        margin-top: 69px;
+        margin-left:-60px;
+        position: absolute;
+}
+.Marvel
+{
+margin-top: 0px;
+margin-left: 8px;
+}
+#see
+{
+    font-size: 3px;
+        color: black;
+        margin-top: 74px;
+        margin-left:-60px;
+        position: absolute;
+} 
+#font4
+{
+    color: black;
+    font-size: 5px;
+    margin-top: 1px;
+    margin-left: 4px;
+}
+#font5
+{
+    color: black;
+    font-size: 5px;
+    margin-top: 1px;
+    margin-left: 4px; 
+}
+.btn
+{
+    font-size: 4px;
+    border-radius: 3px;
+    margin-top: 2px;
+    margin-left: 13px;
+    background-color: yellow;
+    color: black;
+    position: absolute;
+}
+.Laptops
+{
+    margin-top: 40px;
+    margin-left: 275px;
+    position: absolute;
+}
+#app
+{
+    margin-top: 3px;
+    margin-left: 4px;
+    font-size: 5px;
+}
+#air
+{
+    font-size: 3px;
+}
+#frige
+{
+    font-size: 3px;
+}
+#watch
+{
+    font-size: 3px;
+}
+#bag
+{
+    font-size: 3px;
+}
+
+
+
+
+    </style>
+<body>
+
+    <div class="first">
+        <img src="Amazon_logo.png" height="10px" width="35px" class="logo">
+        <i class="fa-solid fa-location-dot" id="location"></i>
+
+        <p class="hello">Hello</p>
+        <p class="add">Select your address</p>
+
+         <details>
+            <summary class="all">ALL</summary>
+        </details>
+        <input type="text" class="input">
+        <i class="fa-solid fa-magnifying-glass" id="search"></i>
+
+        <img src="indian.png" height="5px" width="5px" class="flag">
+
+        <details>
+            <summary class="lan">EN</summary>
+        </details>
+
+        <p class="Returns">Returns</p>
+        <p class="order">& orders</p>
+
+        <p id="sign">Sign in</p>
+
+        <i class="fa-solid fa-cart-plus" id="cart2"></i>
+        <p class="cart">Cart</p>
+
+    </div>
+
+    <div class="second">
+        <i class="fa-solid fa-bars" id="list"></i>
+        <p class="all2">All</p>
+        <p class="TV"><a href="MINITV.html">Amazon miniTV</a></p>
+        <p class="sell">Sell</p>
+        <p class="Deals">Today's Deals</p>
+        <p class="best">Best Sellers</p>
+        <p class="customer">Customer Service</p>
+        <p class="release">New Releases</p>
+        <p class="prime">Prime</p>
+        <p class="pay">Amazon Pay</p>
+        <img src="launch.jpg" class="launch" height="7px" width="50px">
+    </div>
+
+    <div>
+         <marquee behavior="slider" direction="right" scrollamount="0" loop="3">
+            <img src="gif.gif" height="130px" width="190px">
+            <img src="sam.jpg" height="130px" width="190px">
+            <img src="waed.webp" height="130px" width="190px">
+            <!--img src="https://images-eu.ssl-images-amazon.com/images/G/31/img2020/img21/apparelGW/junatf23/unrecapay/WA_WW_3000._CB603210873_.jpg"-->
+        </marquee>
+    </div>
+
+    <div class="third">
+  <div class="box1">
+    <p id="font1">Up to 70% off | Style for men</p>
+<img src="boy.jpg" height="25px" width="30px" class="img1">
+<p id="cloth">Clothing</p>
+
+<img src="shoes.jpg" height="25px" width="30px" class="img2">
+<p id="foot">Footwear</p>
+
+<img src="watch.jpg" height="25px" width="30px" class="img3">
+<p id="watch">Watches</p>
+
+<img src="bag.jpg" height="25px" width="30px" class="img4">
+<p id="bag">Bags & luggage</p>
+
+<a href="#" class="mega">Mega Fashion Days</a>
+  </div>
+
+  <div class="box2">
+<p id="font2">Prime Day is July 15th and 16th</p>
+<img src="prime.jpg" height="60px" width="60px" class="prime">
+<a href="#" id="Explore">Explore all prime day offer</a>
+  </div>
+
+  <div class="box3">
+    <P id="font3">Marvel's Wastelanders: Star-Lord</P>
+    <img src="Marvel.jpg" height="60px" width="60px" class="Marvel">
+    <a href="#" id="see">See more</a>
+  </div>
+
+  <div class="box4">
+    <p id="font4">Sign in for your best experience</p>
+<button class="btn">Sign in securely</button>
+  </div>
+
+  <div>
+    <img src="Laptops.jpg" class="Laptops"  height="62px" width="70px">
+  </div>
+
+  <div class="box5">
+    <P id="font5">Up to 70% off | Clearance store</P>
+    <img src="asus.jpg" height="60px" width="60px" class="Marvel">
+    <a href="#" id="see">See more</a>
+  </div>
+
+  <!--div class="box6">
+    <p id="app">Appliances for your home | Up to 55% off</p>
+    <img src="ac.jpg" height="25px" width="30px" class="img5">
+    <p id="air">Air conditioners</p>
+    
+    <img src="frige.jpg" height="25px" width="30px" class="img6">
+    <p id="frige">Refrigerators</p>
+    
+    <img src="micro.jpg" height="25px" width="30px" class="img7">
+    <p id="watch">Watches</p>
+    
+    <img src="wash.jpg" height="25px" width="30px" class="img8">
+    <p id="bag">Bags & luggage</p>
+    
+    <a href="#" class="mega">Mega Fashion Days</a>
+
+</div>
+
+<div class="box7">
+</div>
+
+<div class="box8">
+</div-->
+
+
+
+
+    </div>
+</body>
+</html>

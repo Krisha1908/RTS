@@ -1,0 +1,279 @@
+SQL> 
+SQL> CL SCR
+
+SQL> REM GROUP BY :
+SQL> 
+SQL> SELECT SUM(SALARY) FROM EMPLOYEES;
+
+SUM(SALARY)                                                                                                                                                                                             
+-----------                                                                                                                                                                                             
+     175500                                                                                                                                                                                             
+
+SQL> SELECT SUM(SALARY) FROM EMPLOYEES WHERE DEPARTMENT_ID = 80;
+
+SUM(SALARY)                                                                                                                                                                                             
+-----------                                                                                                                                                                                             
+      30100                                                                                                                                                                                             
+
+SQL> SELECT SUM(SALARY) FROM EMPLOYEES WHERE DEPARTMENT_ID = 50;
+
+SUM(SALARY)                                                                                                                                                                                             
+-----------                                                                                                                                                                                             
+      17500                                                                                                                                                                                             
+
+SQL> SELECT SUM(SALARY) FROM EMPLOYEES WHERE DEPARTMENT_ID = 110;
+
+SUM(SALARY)                                                                                                                                                                                             
+-----------                                                                                                                                                                                             
+      20300                                                                                                                                                                                             
+
+SQL> SELECT SUM(SALARY) FROM EMPLOYEES WHERE DEPARTMENT_ID = 20;
+
+SUM(SALARY)                                                                                                                                                                                             
+-----------                                                                                                                                                                                             
+      19000                                                                                                                                                                                             
+
+SQL> 
+SQL> /*
+SQL> 
+SQL> DEPARTMENT_ID    SUM(SALARY)
+SQL> ---------------- ------------
+SQL> 10                4400
+SQL> 20               19000
+SQL> ::
+SQL> ::
+SQL> ::
+SQL> 
+SQL> 
+SQL> */
+SQL> 
+SQL> 
+SQL> SELECT DEPARTMENT_ID , SUM(SALARY) FROM EMPLOYEES GROUP BY DEPARTMENT_ID ORDER BY 1;
+
+DEPARTMENT_ID SUM(SALARY)                                                                                                                                                                               
+------------- -----------                                                                                                                                                                               
+           10        4400                                                                                                                                                                               
+           20       19000                                                                                                                                                                               
+           50       17500                                                                                                                                                                               
+           60       19200                                                                                                                                                                               
+           80       30100                                                                                                                                                                               
+           90       58000                                                                                                                                                                               
+          110       20300                                                                                                                                                                               
+                     7000                                                                                                                                                                               
+
+8 rows selected.
+
+SQL> REM JOB_ID WISE , LOWEST AND HIGHEST SALARY.
+SQL> 
+SQL> SELECT JOB_ID , MIN(SALARY) , MAX(SALARY) FROM EMPLOYEES GROUP BY JOB_ID ;
+
+JOB_ID     MIN(SALARY) MAX(SALARY)                                                                                                                                                                      
+---------- ----------- -----------                                                                                                                                                                      
+IT_PROG           4200        9000                                                                                                                                                                      
+AC_MGR           12000       12000                                                                                                                                                                      
+AC_ACCOUNT        8300        8300                                                                                                                                                                      
+ST_MAN            5800        5800                                                                                                                                                                      
+AD_ASST           4400        4400                                                                                                                                                                      
+AD_VP            17000       17000                                                                                                                                                                      
+SA_MAN           10500       10500                                                                                                                                                                      
+MK_MAN           13000       13000                                                                                                                                                                      
+AD_PRES          24000       24000                                                                                                                                                                      
+SA_REP            7000       11000                                                                                                                                                                      
+MK_REP            6000        6000                                                                                                                                                                      
+ST_CLERK          2500        3500                                                                                                                                                                      
+
+12 rows selected.
+
+SQL> SELECT JOB_ID ,MAX(SALARY),MIN(SALARY) FROM EMPLOYEES GROUP BY JOB_ID ORDER BY 1;
+
+JOB_ID     MAX(SALARY) MIN(SALARY)                                                                                                                                                                      
+---------- ----------- -----------                                                                                                                                                                      
+AC_ACCOUNT        8300        8300                                                                                                                                                                      
+AC_MGR           12000       12000                                                                                                                                                                      
+AD_ASST           4400        4400                                                                                                                                                                      
+AD_PRES          24000       24000                                                                                                                                                                      
+AD_VP            17000       17000                                                                                                                                                                      
+IT_PROG           9000        4200                                                                                                                                                                      
+MK_MAN           13000       13000                                                                                                                                                                      
+MK_REP            6000        6000                                                                                                                                                                      
+SA_MAN           10500       10500                                                                                                                                                                      
+SA_REP           11000        7000                                                                                                                                                                      
+ST_CLERK          3500        2500                                                                                                                                                                      
+ST_MAN            5800        5800                                                                                                                                                                      
+
+12 rows selected.
+
+SQL> REM DISPLAY DEPARTMENT_ID AND SUM OF SALARY FOR THE DEPARTMENT TO WHICH 25000 OR MORE SUM OF SALARY IS PAID.
+SQL> 
+SQL> REM SUM(SALARY) > 25000
+SQL> 
+SQL> REM SUMMARY/GROUP/AGGREGATE/MULT ROW FUNCTION > VALUE
+SQL> 
+SQL> SELECT DEPARTMENT_ID , SUM(SALARY) FROM EMPLOYEES WHERE SUM(SALARY) > 25000 GROUP BY DEPARTMENT_ID ORDER BY 1;
+SELECT DEPARTMENT_ID , SUM(SALARY) FROM EMPLOYEES WHERE SUM(SALARY) > 25000 GROUP BY DEPARTMENT_ID ORDER BY 1
+                                                        *
+ERROR at line 1:
+ORA-00934: group function is not allowed here 
+
+
+SQL> REM WHERE AND HAVING BOTH CAN FILTER ROWS.
+SQL> 
+SQL> REM 'WHERE' FILTERS TABLE'S ORIGINAL ROWS
+SQL> 
+SQL> REM 'HAVING' FILTERS SUMMARY ROWS
+SQL> 
+SQL> SELECT DEPARTMENT_ID , SUM(SALARY) FROM EMPLOYEES HAVING SUM(SALARY) > 25000 GROUP BY DEPARTMENT_ID ORDER BY 1;
+
+DEPARTMENT_ID SUM(SALARY)                                                                                                                                                                               
+------------- -----------                                                                                                                                                                               
+           80       30100                                                                                                                                                                               
+           90       58000                                                                                                                                                                               
+
+SQL> SELECT DEPARTMENT_ID , SUM(SALARY) FROM EMPLOYEES GROUP BY DEPARTMENT_ID HAVING SUM(SALARY) > 25000 ORDER BY 1;
+
+DEPARTMENT_ID SUM(SALARY)                                                                                                                                                                               
+------------- -----------                                                                                                                                                                               
+           80       30100                                                                                                                                                                               
+           90       58000                                                                                                                                                                               
+
+SQL> REM DISPLAY MANAGER_ID AND AVERAGE SALARY PAID FOR EACH. DISPLAY ONLY THOSE MANAGER ROWS FOR WHICH LESS THAN 12000 AVERAGE SALARY IS PAID.
+SQL> 
+SQL> SELECT MANAGER_ID ,AVG(SALARY) FROM EMPLOYEES GROUP BY MANAGER_ID HAVING AVG(SALARY)<12000 ORDER BY 1;
+
+MANAGER_ID AVG(SALARY)                                                                                                                                                                                  
+---------- -----------                                                                                                                                                                                  
+       101        8200                                                                                                                                                                                  
+       102        9000                                                                                                                                                                                  
+       103        5100                                                                                                                                                                                  
+       124        2925                                                                                                                                                                                  
+       149  8866.66667                                                                                                                                                                                  
+       201        6000                                                                                                                                                                                  
+       205        8300                                                                                                                                                                                  
+
+7 rows selected.
+
+SQL> REM HIRE QUARTER WISE , COUNT OF EMPLOYEES JOINED THE COMPANY
+SQL> 
+SQL> REM HIRE YEAR WISE , HIGHEST SALARY. DISPLAY ONLY THOSE WHOSE HIGHEST SALARY IS HIGHER THAN 13000.
+SQL> 
+SQL> REM DISPLAY DEPARTMENT_ID , TOTAL SALARY. DISPLAY THOSE DEPARTMENT TO WHICH MORE THAN 12000 HIGHEST SALARY IS PAID.
+SQL> 
+SQL> SELECT HIRE_DATE , COUNT(TO_CHAR(HIRE_DATE,'Q')) FROM EMPLOYEES GROUP BY HIRE_DATE ORDER BY 1;
+
+HIRE_DATE COUNT(TO_CHAR(HIRE_DATE,'Q'))                                                                                                                                                                 
+--------- -----------------------------                                                                                                                                                                 
+17-JUL-87                             1                                                                                                                                                                 
+17-SEP-87                             1                                                                                                                                                                 
+21-SEP-89                             1                                                                                                                                                                 
+03-JAN-90                             1                                                                                                                                                                 
+21-MAY-91                             1                                                                                                                                                                 
+13-JAN-93                             1                                                                                                                                                                 
+07-JUN-94                             2                                                                                                                                                                 
+17-OCT-95                             1                                                                                                                                                                 
+17-FEB-96                             1                                                                                                                                                                 
+11-MAY-96                             1                                                                                                                                                                 
+29-JAN-97                             1                                                                                                                                                                 
+17-AUG-97                             1                                                                                                                                                                 
+15-MAR-98                             1                                                                                                                                                                 
+24-MAR-98                             1                                                                                                                                                                 
+09-JUL-98                             1                                                                                                                                                                 
+07-FEB-99                             1                                                                                                                                                                 
+24-MAY-99                             1                                                                                                                                                                 
+16-NOV-99                             1                                                                                                                                                                 
+29-JAN-00                             1                                                                                                                                                                 
+
+19 rows selected.
+
+SQL> 
+SQL> SELECT TO_CHAR(HIRE_DATE,'YYYY') "HIRE YEAR" ,MAX(SALARY) FROM EMPLOYEES GROUP BY TO_CHAR(HIRE_DATE,'YYYY') HAVING MAX(SALARY)>13000 ORDER BY 1;
+
+HIRE MAX(SALARY)                                                                                                                                                                                        
+---- -----------                                                                                                                                                                                        
+1987       24000                                                                                                                                                                                        
+1989       17000                                                                                                                                                                                        
+1993       17000                                                                                                                                                                                        
+
+SQL> 
+SQL> 
+SQL> SELECT DEPARTMENT_ID ,SUM(SALARY) FROM EMPLOYEES GROUP BY DEPARTMENT_ID HAVING SUM(SALARY)>12000 ORDER BY 1;
+
+DEPARTMENT_ID SUM(SALARY)                                                                                                                                                                               
+------------- -----------                                                                                                                                                                               
+           20       19000                                                                                                                                                                               
+           50       17500                                                                                                                                                                               
+           60       19200                                                                                                                                                                               
+           80       30100                                                                                                                                                                               
+           90       58000                                                                                                                                                                               
+          110       20300                                                                                                                                                                               
+
+6 rows selected.
+
+SQL> SELECT TO_CHAR(HIRE_DATE , `Q' ) , COUNT(*) FROM EMPLOYEES GROUP BY TO_CHAR(HIRE_DATE , `Q' ) ;
+ERROR:
+ORA-01756: quoted string not properly terminated 
+
+
+SQL> 
+SQL> SELECT HIRE_DATE , MAX(SALARY) FROM EMPLOYEES GROUP BY HIRE_DATE HAVING   MAX(SALARY) > 13000;
+
+HIRE_DATE MAX(SALARY)                                                                                                                                                                                   
+--------- -----------                                                                                                                                                                                   
+17-JUL-87       24000                                                                                                                                                                                   
+13-JAN-93       17000                                                                                                                                                                                   
+21-SEP-89       17000                                                                                                                                                                                   
+
+SQL> 
+SQL> SELECT DEPARTMENT_ID , SUM(SALARY) FROM EMPLOYEES GROUP BY DEPARTMENT_ID HAVING SUM(SALARY) >12000;
+
+DEPARTMENT_ID SUM(SALARY)                                                                                                                                                                               
+------------- -----------                                                                                                                                                                               
+           90       58000                                                                                                                                                                               
+           20       19000                                                                                                                                                                               
+          110       20300                                                                                                                                                                               
+           50       17500                                                                                                                                                                               
+           80       30100                                                                                                                                                                               
+           60       19200                                                                                                                                                                               
+
+6 rows selected.
+
+SQL> SELECT TO_CHAR(HIRE_DATE , 'Q' ) , COUNT(*) FROM EMPLOYEES GROUP BY TO_CHAR(HIRE_DATE , 'Q' ) ;
+
+T   COUNT(*)                                                                                                                                                                                            
+- ----------                                                                                                                                                                                            
+1          8                                                                                                                                                                                            
+3          5                                                                                                                                                                                            
+2          5                                                                                                                                                                                            
+4          2                                                                                                                                                                                            
+
+SQL> SELECT TO_CHAR(HIRE_DATE,'YYYY') "HIRE YEAR" ,MAX(SALARY) FROM EMPLOYEES GROUP BY TO_CHAR(HIRE_DATE,'YYYY') HAVING MAX(SALARY)>13000 ORDER BY 1;
+
+HIRE MAX(SALARY)                                                                                                                                                                                        
+---- -----------                                                                                                                                                                                        
+1987       24000                                                                                                                                                                                        
+1989       17000                                                                                                                                                                                        
+1993       17000                                                                                                                                                                                        
+
+SQL> SELECT TO_CHAR(HIRE_DATE,'Q') , COUNT(TO_CHAR(HIRE_DATE,'Q')) FROM EMPLOYEES GROUP BY TO_CHAR(HIRE_DATE,'Q') ORDER BY 1;
+
+T COUNT(TO_CHAR(HIRE_DATE,'Q'))                                                                                                                                                                         
+- -----------------------------                                                                                                                                                                         
+1                             8                                                                                                                                                                         
+2                             5                                                                                                                                                                         
+3                             5                                                                                                                                                                         
+4                             2                                                                                                                                                                         
+
+SQL> SELECT DEPARTMENT_ID ,SUM(SALARY) FROM EMPLOYEES GROUP BY DEPARTMENT_ID HAVING MAX(SALARY)>12000 ORDER BY 1;
+
+DEPARTMENT_ID SUM(SALARY)                                                                                                                                                                               
+------------- -----------                                                                                                                                                                               
+           20       19000                                                                                                                                                                               
+           90       58000                                                                                                                                                                               
+
+SQL> SELECT DEPARTMENT_ID , SUM(SALARY) FROM EMPLOYEES GROUP BY DEPARTMENT_ID HAVING MAX(SALARY) >12000;
+
+DEPARTMENT_ID SUM(SALARY)                                                                                                                                                                               
+------------- -----------                                                                                                                                                                               
+           90       58000                                                                                                                                                                               
+           20       19000                                                                                                                                                                               
+
+SQL> SPOOL OFF

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+            background-color: black;
+            animation-name: bg1;
+            animation-timing-function: linear;
+            animation-duration: 5s;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes bg1
+        {
+            0%{background-color: teal;}
+            20%{background-color: darkorchid;}
+            40%{background-color: tomato;}
+            80%{background-color:plum;}
+            100%{background-color: bisque;}
+        }
+        .box
+        {
+            border: 8px solid black;
+            height: 300px;
+            width: 700px;
+            border-radius: 20px;
+            background-color: red;
+            animation-name: bg2;
+            animation-timing-function: linear;
+            animation-duration: 5s;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            position: absolute;
+            top: 300PX;
+            left: 400PX;
+        }
+        p
+        {
+            font-size: 50PX;
+            padding-left: 70PX;
+            padding-top: 60PX;
+        }
+        @keyframes bg2
+        {
+            0%{background-color: red;}
+            20%{background-color: PINK;border: 3px dotted blue;}
+            40%{background-color: green;}
+            80%{background-color: pink;}
+            100%{background-color: thistle;}
+        }
+
+    </style>
+</head>
+<body>
+  <div class="box"><p>ROYAL TECHNOSOFT</p></div>  
+</body>
+</html>

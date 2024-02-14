@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ball
+        {
+            /* background-image: url(''); */
+            /* background-size: cover; */
+
+            background-image: linear-gradient(purple,pink,purple);
+            height: 200px;
+            width: 200px;
+            animation-name: ball1;
+            animation-duration: 20s;
+            animation-delay: 2s;
+            animation-timing-function: linear;
+            position: absolute;
+            animation-iteration-count: infinite;
+            box-shadow: 7px 7px 7px gray;
+        }
+        @keyframes ball1
+        {
+            0%{left: 0px; top: 0px;}
+            30%{left: 200px;top:200px ;}
+            50%{left: 500px;top: 500px;}
+            70%{left: 900px;top: 200px;}
+            100%{left: 959px;top: 0px;}
+
+        }
+    </style>
+</head>
+<body>
+    <div class="ball"></div>
+</body>
+</html>

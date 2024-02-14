@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>SPOTIFY</title>
+</head>
+<style>
+    .first
+    {
+        border: 1px solid black;
+        height: 200px;
+        width: 60px;
+        background-color: black;
+    }
+    .first .logo
+    {
+        margin-left: 0px;
+        margin-top: -15px;
+    }
+    .home
+    {
+        color: white;
+        font-size: 5px;
+        margin-left: 14px;
+        margin-top: -8px;
+    }
+    #home2
+    {
+        color:white;
+        font-size: 5px;
+        margin-left: 5px;
+        margin-top: -30px;
+    }
+    #search2
+    {
+        color:white;
+        font-size: 5px;
+        margin-left: 5px;
+    }
+    #library2
+    {
+        color:white;
+        font-size: 5px;
+        margin-left: 5px;
+    }
+    #playlist
+    {
+        color:white;
+        font-size: 5px;
+        margin-left: 5px;
+        margin-top: 0px;
+    }
+    #like
+    {
+        color:white;
+        font-size: 5px;
+        margin-left: 5px;
+        margin-top: 0px;
+    }
+    #cookies
+    {
+        font-size: 3px;
+        color: red;
+        margin: 40px 22px;
+    }
+    #Privacy
+    {
+        font-size: 3px;
+        color: red;
+        margin: -38px 22px;  
+    }
+    .second
+    {
+        border: 1px solid black;
+        height: 180px;
+        width: 280px;
+        background-color: rgba(0, 0, 0, 0.895);
+        margin-top: -179px;
+        margin-left: 62px; 
+        color: white;
+        font-size: 7px;  
+    }
+    .box1
+    {
+        border: 1 px solid #ff000018;
+        background-color: rgba(128, 128, 128, 0.211);
+        height: 68px;
+        width: 47px;
+        margin-top: -163px;
+        margin-left: 66px;
+        border-radius: 2px;
+    }
+    .box2
+    {
+        border: 1 px solid #ff000018;
+        background-color: rgba(128, 128, 128, 0.211);
+        height: 68px;
+        width: 47px;
+        margin-top: -68px;
+        margin-left: 120px;
+        border-radius: 2px;
+    }
+    .box3
+    {
+        border: 1 px solid #ff000018;
+        background-color: rgba(128, 128, 128, 0.211);
+        height: 68px;
+        width: 47px;
+        margin-top: -68px;
+        margin-left: 175px;
+        border-radius: 2px;
+    }
+    .box4
+    {
+        border: 1 px solid #ff000018;
+        background-color: rgba(128, 128, 128, 0.211);
+        height: 68px;
+        width: 47px;
+        margin-top: -68px;
+        margin-left: 230px;
+        border-radius: 2px;
+    }
+    .box5
+    {
+        border: 1 px solid #ff000018;
+        background-color: rgba(128, 128, 128, 0.211);
+        height: 68px;
+        width: 47px;
+        margin-top: -68px;
+        margin-left: 285px;
+        border-radius: 2px;
+    }
+    .box6
+    {
+        border: 1 px solid #ff000018;
+        background-color: rgba(128, 128, 128, 0.211);
+        height: 68px;
+        width: 47px;
+        margin-top: 20px;
+        margin-left: 66px;
+        border-radius: 2px;
+    }
+   
+    .box7
+    {
+        border: 1 px solid #ff000018;
+        background-color: rgba(128, 128, 128, 0.211);
+        height: 68px;
+        width: 47px;
+        margin-top: -68px;
+        margin-left: 120px;
+        border-radius: 2px;
+    }
+    .box8
+    {
+        border: 1 px solid #ff000018;
+        background-color: rgba(128, 128, 128, 0.211);
+        height: 68px;
+        width: 47px;
+        margin-top: -68px;
+        margin-left: 175px;
+        border-radius: 2px;
+    }
+    .box9
+    {
+        border: 1 px solid #ff000018;
+        background-color: rgba(128, 128, 128, 0.211);
+        height: 68px;
+        width: 47px;
+        margin-top: -68px;
+        margin-left: 230px;
+        border-radius: 2px;
+    }
+    .box10
+    {
+        border: 1 px solid #ff000018;
+        background-color: rgba(128, 128, 128, 0.211);
+        height: 68px;
+        width: 47px;
+        margin-top: -68px;
+        margin-left: 285px;
+        border-radius: 2px;
+    }
+    .cover1
+    {
+        margin-top: 2px;
+        margin-left: 4px;
+        border-radius: 2px;
+    }
+    .cover2
+    {
+        margin-top: 2px;
+        margin-left: 4px;
+        border-radius: 2px;
+    }
+    .cover3
+    {
+        margin-top: 2px;
+        margin-left: 4px;
+        border-radius: 2px;
+    }
+    .cover4
+    {
+        margin-top: 2px;
+        margin-left: 4px;
+        border-radius: 2px;
+    }
+    .cover5
+    {
+        margin-top: 2px;
+        margin-left: 4px;
+        border-radius: 2px;
+    }
+    .cover6
+    {
+        margin-top: 2px;
+        margin-left: 4px;
+        border-radius: 2px;
+    }
+    .cover7
+    {
+        margin-top: 2px;
+        margin-left: 4px;
+        border-radius: 2px;
+    }
+    .cover8
+    {
+        margin-top: 2px;
+        margin-left: 4px;
+        border-radius: 2px;
+    }
+    .cover9
+    {
+        margin-top: 2px;
+        margin-left: 4px;
+        border-radius: 2px;
+    }
+    .cover10
+    {
+        margin-top: 2px;
+        margin-left: 4px;
+        border-radius: 2px;
+    }
+    .font1
+    {
+        font-size: 4px;
+        color: white;
+        margin-left:  17px;
+        margin-top: -1.5px
+    }
+    .font2
+    {
+        font-size: 4px;
+        color: white;
+        margin-left:  11px;
+        margin-top: -1px;
+    }
+    .font3
+    {
+        font-size: 4px;
+        color: white;
+        margin-left:  8px;
+        margin-top: -1px;
+    }
+    .font4
+    {
+        font-size: 4px;
+        color: white;
+        margin-left:  15px;
+        margin-top: -1px;
+    }
+    .font5
+    {
+        font-size: 4px;
+        color: white;
+        margin-left:  6px;
+        margin-top: -1px;
+    }
+    .font6
+    {
+        font-size: 4px;
+        color:white;
+        margin-left:  6px;
+        margin-top: 1px;
+    }
+    .font7
+    {
+        font-size: 4px;
+        color: white;
+        margin-left:  12px;
+        margin-top: 1px;
+    }
+    .font8
+    {
+        font-size: 4px;
+        color: white;
+        margin-left:  9px;
+        margin-top: 1px;
+    }
+    .font9
+    {
+        font-size: 4px;
+        color: white;
+        margin-left:  11px;
+        margin-top: 1px;
+    }
+    .font10
+    {
+        font-size: 4px;
+        color: white;
+        margin-left:  20px;
+        margin-top: 1px;
+    }
+    #p1
+    {
+        font-size: 3px;
+        margin-top: -3px;
+        margin-left: 3px;
+        color: white;
+    }
+    #p2
+    {
+        font-size: 3px;
+        margin-top: -3px;
+        margin-left: 3px;
+        color: white;
+    }
+    #p3
+    {
+        font-size: 3px;
+        margin-top: -3px;
+        margin-left: 3px;
+        color: white;
+    }
+    #p4
+    {
+        font-size: 3px;
+        margin-top: -3px;
+        margin-left: 3px;
+        color: white;
+    }
+    #p5
+    {
+        font-size: 3px;
+        margin-top: -3px;
+        margin-left: 3px;
+        color: white;
+    }
+    #p6
+    {
+        font-size: 3px;
+        margin-top: -3px;
+        margin-left: 3px;
+        color: white;
+    }
+    #p7
+    {
+        font-size: 3px;
+        margin-top: -3px;
+        margin-left: 3px;
+        color: white;
+    }
+    #p8
+    {
+        font-size: 3px;
+        margin-top: -3px;
+        margin-left: 3px;
+        color: white;
+    }
+    #p9
+    {
+        font-size: 3px;
+        margin-top: -3px;
+        margin-left: 3px;
+        color: white;
+    }
+    #p10
+    {
+        font-size: 3px;
+        margin-top: -3px;
+        margin-left: 3px;
+        color: white;
+    }
+    .third
+    {
+         border: 1px solid black;
+         margin-top: -198px;
+         margin-left: 62px;
+         height: 21px;
+         width: 280px;
+         background-color: rgba(0, 0, 0, 0.925);
+    }
+    #circleright
+    {
+        color:gray;
+        font-size: 7px;
+        margin-left: 0px;   
+    }
+    #circleleft
+    {
+        color:gray;
+        font-size: 7px;
+        margin-left: 5px;   
+    }
+    #sign
+    {
+        border: 1px solid  rgba(0, 0, 0, 0.908);
+        color: white;
+        font-size: 5px;
+        height: 5px;
+        width: 20px;
+        border-radius: 6px;
+        padding: 3px;
+        margin-top: -12px;
+        margin-left: 200px;
+        
+    }
+    #log
+    {
+       
+        border: 1px solid  rgba(0, 0, 0, 0.908);
+        color: black;
+        font-size: 5px;
+        height: 5px;
+        width: 20px;
+        border-radius: 6px;
+        padding: 3px;
+        margin-top: -18px;
+        margin-left: 235px; 
+        background-color: white;
+    }
+    </style>
+<body>
+<div class="first">
+    <img src="spotifylogo.png" height="60px" width="60px" class="logo">
+    <i id="home2" class="fa-solid fa-house"></i>
+    <p class="home">Home</p>
+
+   <i id="search2" class="fa-solid fa-magnifying-glass"></i>
+    <p class="home">Search</p>
+
+     <i  id="library2" class="fa-solid fa-rectangle-list"></i> 
+    <p class="home">Your library</p>
+   
+    <i id="playlist" class="fa-solid fa-square-plus"></i> 
+    <p class="home">Create playlist</p>
+     
+    <i id="like" class="fa-solid fa-heart"></i>
+    <p class="home">Liked Songs</p>
+   
+    <p id="cookies">Cookies</p>
+    <p id="Privacy">Privacy</p>
+</div>
+
+
+<div class="second">
+<p> Spotify Playlist</p>
+</div>
+
+<div class="box1">
+    <img src="cover11.jpg" height="50px" width="39px" class="cover1">
+    <p class="font1">PEACE</p>
+    <p id="p1">Relax and indulge with beautiful piano pieces with...</p>
+</div>
+
+<div class="box2">
+    <img src="cover2.jpg" height="50px"  width="39px" class="cover2">
+    <p class="font2">DEEP FOCUE</p>
+    <p id="p2">Keep clam and focue with ambien and listen...</p>
+</div>
+
+<div class="box3">
+    <img src="cover3.jpg" height="50px"  width="39px" class="cover3">
+     <p class="font3">WORKING DAY</p>
+     <!--p id class="p3">Work with soft music in the...</p-->
+</div>
+
+<div class="box4">
+    <img src="cover4.jpg" height="50px"  width="39px" class="cover4">
+     <p class="font4">HELIOS</p>
+     <p id="p4">The biggest songs of 2010s and hip-hop of ...  </p>
+</div>
+
+<div class="box5">
+    <img src="cover5.jpg" height="50px"  width="39px" class="cover5">
+     <p class="font5">FAR & BEYOND</p>
+     <p id="p5">Lounge and chill out music are the best ...</p>
+</div>
+
+<div class="box6">
+    <img src="cover6.jpg" height="50px"  width="39px" class="cover6">
+    <p class="font6">CLASSICAL FOCUS</p>
+    <p id="p6">Uptempo instrumental classical ...</p>
+</div>
+
+<div class="box7">
+    <img src="cover7.jpg" height="50px"  width="39px" class="cover7">
+    <p class="font7">SPACED OUT</p>
+    <p id="p7">Music from the ether to focus and...</p>
+</div>
+
+<div class="box8">
+    <img src="cover8.jpg" height="50px"  width="39px" class="cover8">
+    <p class="font8">COFFEE BEATS</p>
+    <p id="p8">Book coffee music while read ...</p>
+</div>
+
+<div class="box9">
+    <img src="cover9.jpg" height="50px"  width="39px" class="cover9">
+    <p class="font9">RELAXING</p>
+    <p id="p9">Soothing, atmospheric guitar...</p>
+</div>
+
+<div class="box10">
+    <img src="cover10.jpg" height="50px"  width="39px" class="cover10">
+    <p class="font10">FEEL</p>
+    <p id="p10">Gentle instrumental music to help ...</p>
+
+</div>
+
+<div class="third">
+    <i id="circleleft" class="fa-solid fa-circle-chevron-left"></i>
+    <i id="circleright" class="fa-solid fa-circle-chevron-right"></i>
+    <p id="sign">SIGN UP</p>
+    <p id="log">LOG IN</p>
+</div>
+
+</body>
+</html>

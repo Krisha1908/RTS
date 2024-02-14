@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box
+        {
+            /* border: 1px solid black; */
+            background-image: linear-gradient(purple,pink,purple);
+            height: 200px;
+            width: 200px;
+            animation-name: box1;
+            animation-duration: 20s;
+            animation-delay: 2s;
+            animation-timing-function: linear;
+            position: absolute;
+            animation-iteration-count: infinite;
+            box-shadow: 7px 7px 7px gray;
+        }
+        @keyframes box1
+        {
+            0%{left: 0px; top:0px ;}
+            25%{left: 200px; top: 0px;}
+            75%{left: 200px;top: 200px; }
+            100%{left: 0px;top: 0px;}
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

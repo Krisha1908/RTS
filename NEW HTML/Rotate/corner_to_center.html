@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+            background-color: bisque;
+        }
+        .box1
+        {
+            background-color: burlywood;
+            border: 5px solid black;
+            height: 200px;
+            width: 200px;
+            position: relative;
+            transition: 2s;
+        }
+        .box1:hover
+        {
+            background-color: pink;
+            transform: translate(500px,300px) rotate(360deg);
+            height: 200px;
+            width: 200px;
+            border: 1px solid ;
+        }
+        .box2
+        {
+            background-color: palevioletred;
+            border: 5px solid black;
+            height: 200px;
+            width: 200px;
+            /* float: right; */
+            position: relative;
+            top: -190px;
+            left: 1250px;
+            transition: 2s;
+        }
+        .box2:hover
+        {
+            background-color: gold;
+            transform: translate(-550px,250px) rotate(180deg);
+            height: 200px;
+            width: 200px;
+            border: 1px solid ;
+        }
+        .box3
+        {
+            background-color: paleturquoise;
+            border: 5px solid black;
+            height: 200px;
+            width: 200px;
+            position: relative;
+            top: 100px;
+            transition: 2s;
+        }
+        .box3:hover
+        {
+            background-color: plum;
+            transform: translate(600px,-300px) rotate(180deg);
+            height: 200px;
+            width: 200px;
+            border: 1px solid ;
+        }
+        .box4
+        {
+            background-color: blue;
+            border: 5px solid black;
+            height: 200px;
+            width: 200px;
+            /* float: right; */
+            position: relative;
+            left: 1250px;
+            top: -100px;
+            transition: 2s;
+        }
+        .box4:hover
+        {
+            background-color: purple;
+            transform: translate(-550px,-290px) rotate(180deg);
+            height: 200px;
+            width: 200px;
+            border: 1px solid ;
+        }
+    </style>
+</head>
+<body>
+   <div class="box1"></div> 
+   <div class="box2"></div> 
+   <div class="box3"></div> 
+   <div class="box4"></div> 
+</body>
+</html>

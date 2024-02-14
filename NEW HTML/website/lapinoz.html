@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>La pino'z pizza</title>
+</head>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    #nv-br{
+        /* border: 1px solid  black; */
+        /* border: none; */
+        height: 60px;
+        background-color: white;
+    }
+    #nv-br .ig{
+        height: 50px;
+        margin: 0px 100px;
+        /* border: 1px solid black; */
+    }
+    #nv-br .hme{
+        text-decoration: none;
+        color: rgb(53, 94, 59);
+        font-size: 12px;
+        font-family: Arial, Helvetica, sans-serif;
+        letter-spacing: 0.8px;
+        position: absolute;
+        margin: 20px 130px;
+    }
+    #nv-br .odr-online{
+        text-decoration: none;
+        color: rgb(53, 94, 59);
+        font-size: 12px;
+        font-family: Arial, Helvetica, sans-serif;
+        letter-spacing: 0.8px;
+        position: absolute;
+        margin: 20px 180px;
+    }
+    #nv-br .str-locator{
+        text-decoration: none;
+        color: rgb(53, 94, 59);
+        font-size: 12px;
+        font-family: Arial, Helvetica, sans-serif;
+        letter-spacing: 0.8px;
+        position: absolute;
+        margin: 20px 280px;
+    }
+    #nv-br .Frn-Enquiry{
+        text-decoration: none;
+        color: rgb(53, 94, 59);
+        font-size: 12px;
+        font-family: Arial, Helvetica, sans-serif;
+        letter-spacing: 0.8px;
+        position: absolute;
+        margin: 20px 380px;
+    }
+    #nv-br .our-Story{
+        text-decoration: none;
+        color: rgb(53, 94, 59);
+        font-size: 12px;
+        font-family: Arial, Helvetica, sans-serif;
+        letter-spacing: 0.8px;
+        width: 100px;
+        position: absolute;
+        margin: 20px 510px;
+    }
+    #nv-br .ctct-us{
+        text-decoration: none;
+        color: rgb(53, 94, 59);
+        font-size: 12px;
+        font-family: Arial, Helvetica, sans-serif;
+        letter-spacing: 0.8px;
+        width: 100px;
+        position: absolute;
+        margin: 20px 587px;
+    }
+    #nv-br #right
+    {
+        font-size: 12px;
+        position: absolute;
+        margin: 20px 700px;
+    }
+    .bgimg
+    {
+        /* border: 1px solid  black; */
+        height: 300px;
+
+    }
+    .bgimg .img
+    {
+        height: 300px;
+        width: 100%;
+        /* opacity: 0.1; */
+    }
+    .white-one
+    {
+        /* border: 1px solid white; */
+        border-radius: 3px;
+        height: 240px;
+        width: 990px;
+        position: absolute;
+        left: 200px;
+        top: 89px;
+        background-color: white;
+        opacity: 0.8;
+    }
+    .dvy
+    {
+        position: absolute;
+        height: 15px;
+        left: 50px;
+        top: 18px;
+    }
+    .txtdevy
+    {
+        position: absolute;
+        font-size: 16px;
+        left: 70px;
+        top: 18px;  
+    }
+    .pkp
+    {
+        position: absolute;
+        height: 15px;
+        left: 150px;
+        top: 18px;
+    }
+    .txtpkp
+    {
+        position: absolute;
+        font-size: 16px;
+        left: 167px;
+        top: 18px;  
+    }
+    .order
+    {
+        position: absolute;
+        font-size: 20px;
+        left: 50px;
+        top: 70px;  
+        color:rgb(53, 94, 59) ;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 800;
+    }
+    .outlet
+    {
+        position: absolute;
+        font-size: 25px;
+        left: 50px;
+        top: 110px;
+        font-weight: 900;
+        font-family: 'Montserrat', sans-serif;
+        /* font-weight: 800; */
+    }
+    .use
+    {
+        border: 1px solid rgb(0, 100, 0);
+        border-radius: 4px;
+        height: 40px;
+        width: 210px;
+        font-size: 15px;
+        position: absolute;
+        left: 50px;
+        top: 170px;
+        color: white;
+        padding: 10px 20px;
+        background-color: rgb(0, 100, 0);
+    }
+    .use:hover
+    {
+        background-color:rgb(53, 94, 59);
+        color: whitesmoke;
+    }
+    .or
+    {
+        text-decoration: none;
+        color: rgb(103, 101, 101);
+        font-size: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        letter-spacing: 0.8px;
+        width: 100px;
+        position: absolute;
+        left: 280px;
+        top: 186px;
+    }
+    .city
+    {
+        border: 1px solid black;
+        height: 40px;
+        width: 210px;
+        position: absolute;
+        top: 170px;
+        left: 320px;
+    }
+    .select-city
+    {
+        font-size: 16px;
+        /* position: absolute; */
+        margin: 10px 40px;
+    }
+    .list-tag
+    {
+        border: 1px solid black;
+        border-radius: 5px;
+        height: 350px;
+        /* width: 100px; */
+        background-color: white;
+        opacity: 0.1px;
+        list-style-type: none;
+    }
+    .outlet1
+    {
+        border: 1px solid black;
+        height: 40px;
+        width: 210px;
+        position: absolute;
+        top: 170px;
+        left: 530px;
+    }
+    .select-outlet
+    {
+        font-size: 16px;
+        /* position: absolute; */
+        margin: 10px 40px;
+        
+    }
+    .Offers
+    {
+        font-size: 29px;
+        margin: 30px 80px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+    }
+    .chef
+    {
+        position: absolute;
+        border: 1px solid white;
+        border-radius: 110%;
+        left: 800px;
+        top: 700px;
+        height: 400px;
+    }
+    .about
+    {
+        font-size: 25px;
+        margin: 40px 90px;
+        position: absolute;
+        color: rgb(53, 94, 59);
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+    }
+    .Story
+    {
+        font-size: 27px;
+        position: absolute;
+        left: 90px;
+        top: 730px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+    }
+    .txt-story
+    {
+        display: flex;
+        height: 500px;
+        width: 500px;
+        position: absolute;
+        left: 130px;
+        top: 780px;
+        font-size: 19px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .coupan
+    {
+        position: absolute;
+        top: 1200px;
+        left: 100px;
+        border-radius: 10px;
+    }
+    .goa:hover
+    {
+        background-color: blue;
+        color: white;
+    }
+    .agr:hover
+    {
+        background-color: blue;
+        color: white;
+    }
+    .del:hover
+    {
+        background-color: blue;
+        color: white;
+    }
+    .ben:hover
+    {
+        background-color: blue;
+        color: white;
+    }
+    .fer:hover
+    {
+        background-color: blue;
+        color: white;
+    }
+    .ahm:hover
+    {
+        background-color: blue;
+        color: white;
+    }
+    .brh:hover
+    {
+        background-color: blue;
+        color: white;
+    }
+    .cnni:hover
+    {
+        background-color: blue;
+        color: white;
+    }
+    .chi:hover
+    {
+        background-color: blue;
+        color: white;
+    }
+    .dee:hover
+    {
+        background-color: blue;
+        color: white;
+    }
+    .bad:hover
+    {
+        background-color: blue;
+        color: white;
+    }
+    .Gandhi:hover
+    {
+        background-color: blue;
+        color: white;
+    }
+    .round-pizza
+    {
+        margin-left: 800px;
+        margin-top: 60px;
+    }
+    .g-journey
+    {
+        font-size: 25px;
+        position: absolute;
+        top: 1520px;
+        left: 100px;
+        color: rgb(53, 94, 59);
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+    }
+    .two-11
+    {
+        font-size: 25px;
+        position: absolute;
+        top: 1590px;
+        left: 100px;
+        font-weight: 700;
+    }
+    .launch
+    {
+        height: 30px;
+        position: absolute;
+        top: 1590px;
+        left: 170px;
+    }
+    .main6
+    {
+        /* border: 1px solid black; */
+        height: 700px;
+        margin-top: 800px;
+       
+    }
+    .love
+    {
+        font-size: 25px;
+        /* margin: 40px 90px; */
+        position: absolute;
+        left: 550px;
+        top: 1480px;
+        color:black;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;   
+    }
+    .Countries
+    {
+        font-size: 20px;
+        /* margin: 40px 90px; */
+        position: absolute;
+        left: 490px;
+        top: 1520px;
+        color:rgb(53, 94, 59);
+        font-family: 'Montserrat', sans-serif;
+        /* font-weight: 700;   */
+    }
+    .loop
+    {
+        position: absolute;
+        top: 1580px;
+    }
+</style>
+<body>
+    <div id="nv-br">
+        <img src="lapinoz-logo.png" alt="" class="ig">
+        <a href="lapinoz.html" class="hme">Home</a>
+        <a href="order_online.html" class="odr-online">Order Online</a>
+        <a href="store_located.html" class="str-locator">Store Locator</a>
+        <a href="#" class="Frn-Enquiry">Franchise Enquiry</a>
+        <a href="#" class="our-Story">Our Story</a>
+        <a href="#" class="ctct-us">Contact Us</a>
+        <i class="fa-solid fa-arrow-right-from-bracket" id="right"></i>
+    </div>
+
+    <div class="bgimg">
+        <img src="pizaabg.png" alt="" class="img">
+
+        <div class="white-one">
+            <div class="txt">
+                <img src="delivery.png" alt="" class="dvy">
+                <p class="txtdevy">Delivery</p>
+                <img src="pickup.png" alt="" class="pkp">
+                <p class="txtpkp">Pickup</p>
+
+                <p class="order">Lets Get Ordering On La Pino'z Pizza</p>
+                <p class="outlet"> Select Your Nearest Outlet</p>
+
+                <p class="use"><i class="fa-solid fa-location-dot" id="location"></i>Use my current location</p>
+                <p class="or">OR</p>
+
+                <details class="city">
+                    <summary class="select-city">Select City</summary>
+                    <ul class="list-tag">
+                    <li class="agr">Agra</li>
+                    <li class="ahm">Ahemdabad</li>
+                    <li class="brh">Bharuch</li>
+                    <li class="ben">Bengluru</li>
+                    <li class="cnni">Chennai</li>
+                    <li class="chi">Chikhli</li>
+                    <li class="del">Delhi</li>
+                    <li class="dee">Deesa</li>
+                    <li class="bad">Faridabad</li>
+                    <li class="fer">Ferozepur</li>
+                    <li class="Gandhi">Gandhinagar</li>
+                    <li class="goa">Goa</li>
+                    <li>Halol</li>
+                    <li>Haldwani</li>
+                    <li>Indor</li>
+                    <li>Jaipur</li>
+                    <li>Jammu</li>
+                    <li>surat</li>
+                    <li>mumbai</li>
+                    </ul>
+                </details>
+
+                <details class="outlet1">
+                    <summary class="select-outlet">Select Outlet</summary>
+                </details>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="main3">
+        <p class="Offers">Deals and Offers</p>
+        <marquee behavior="scroll" direction="left" scrollamount="20" loop="2">
+            <img src="offer1.jpg" alt="" height="200px" >
+            <img src="offer2.jpg" alt="" height="200px">
+            <img src="offer3.jpg" alt="" height="200px">
+            <img src="offer4.jpg" alt="6" height="200px">
+            <img src="offer5.jpg" alt="" height="200px">
+        </marquee>
+    </div>
+    
+    <div class="main4">
+        <p class="about">About Us</p>
+        <p class="Story">The Story of La Pino'z Pizza</p>
+        <p class="txt-story">The story of your favourite pizza place started back in 2011 when Sanam Kapoor opened his very first pizzeria in his hometown 
+            Chandigarh. Inspired by his own search for delicious pizza options, he started to wonder if there was a better way of doing 
+            pizza and business. The last thing the world needed was another pizzeria, but maybe this one could be different. Maybe with 
+            this one, everyone could get exactly what they wanted, made fresh on demand. It all started sounding pretty great, and soon 
+            Sanam was opening the first La Pinoz in City Beautiful. 
+           </p>
+        <img src="chef.jpg" alt="" class="chef">
+    </div>
+
+    <div class="main5">
+        <img src="fromhouse.jpeg" alt="" class="coupan">
+    </div>
+
+    <div class="main6">
+        <p class="love">Loved Across India</p>
+        <p class="Countries">Now Launching In Over 10 Countries</p>
+        <marquee behavior="scroll" direction="left" scrollamount="20" loop="2" class="loop">
+            <img src="india.jpg" alt="" height="200px">
+            <img src="usa.jpg" height="200px" alt="">
+            <img src="switzerland.jpg" height="200px" alt="">
+            <img src="uk.jpg" height="200px" alt="">
+            <img src="canada.jpg" height="200px" alt="">
+            <img src="australia.jpg" height="200px" alt="">
+            <img src="dubai.jpg" height="200px" alt="">
+            <img src="tanzania.jpg" height="200px" alt="">
+            <img src="thailand.jpg" height="200px" alt="">
+            
+        </marquee>
+    </div>
+
+    
+</body>
+</html>
+

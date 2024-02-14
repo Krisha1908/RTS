@@ -1,0 +1,21 @@
+USER DEFINE...functions
+
+4 type  of functions are there 
+
+1)with return type and with arguments
+2)with return type and without arguments
+3)without return type and with arguments
+4)without return type and without arguments
+
+
+javascript is dynamiclly typed language
+
+int test(){}
+void test(){}
+float test(){}
+
+//function keyword is used to define the function
+//arrow function is used to define the function
+
+use of functions:
+resuability of code

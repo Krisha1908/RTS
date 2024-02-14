@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *
+        {
+            box-sizing: border-box;
+        }
+        body
+        {
+            margin: 0px; 
+            padding: 0px;
+        }
+        
+        ul
+        {
+            margin: 0px; 
+            padding: 0px;
+            list-style: none;
+            background-color: palevioletred;
+            overflow: hidden;
+        }
+        li
+        {
+            float: left;
+        }
+        li a
+        {
+            text-decoration: none;
+            /* display: flex; */
+            color: white;
+            padding: 20px;
+            display: block;
+            font-size: 20px;
+            text-align: center;
+           
+        }
+        .drop_list
+        {
+            display: none;
+            position: absolute;
+            z-index: 1;
+            background-color: #666;
+            width: 100px;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
+        }
+        .drpbtn:hover .drplist {
+            display: block;
+         }
+
+        .drplist a:hover {
+            background-color: #000;
+            color: #fff;
+        }
+
+        .header {
+            width: 100%;
+            padding: 10px;
+            background-color: gold;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Drop Down Menu</h1>
+    </div>
+
+    <ul>
+        <li>
+            <a href="" class="drop_btn">Home</a>
+        <div class="drop_list">
+            <a href="">Sub1</a>
+            <a href="">Sub2</a>
+            <a href="">Sub3</a>
+            <a href="">Sub4</a>
+            <a href="">Sub5</a>
+        </div>
+        </li>
+
+        <li  class="drop_btn">
+            <a href="">Login</a>
+        <div class="drop_list">
+            <a href="">Sub1</a>
+            <a href="">Sub2</a>
+            <a href="">Sub3</a>
+            <a href="">Sub4</a>
+            <a href="">Sub5</a>
+        </div>
+        </li>
+
+        <li>
+            <a href="" class="drop_btn">Contact Us</a>
+        <div class="drop_list">
+            <a href="">Sub1</a>
+            <a href="">Sub2</a>
+            <a href="">Sub3</a>
+            <a href="">Sub4</a>
+            <a href="">Sub5</a>
+        </div>
+        </li>
+
+        <li  class="drop_btn">
+            <a href="#">About Us
+            </a>
+        <div class="drop_list">
+            <a href="#">Sub1</a>
+            <a href="#">Sub2</a>
+            <a href="#">Sub3</a>
+            <a href="#">Sub4</a>
+            <a href="#">Sub5</a>
+        </div>
+        </li>
+
+        
+        </div>
+        </li>
+        
+    </ul>
+</body>
+</html>

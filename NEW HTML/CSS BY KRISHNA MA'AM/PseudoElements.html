@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Elements</title>
+    <style>
+        /* a{
+            color: red;
+        } */
+        a[name]{
+            color: red;
+        }
+
+        /* a[target]{
+            text-decoration: none;
+            color: gold;
+        } */
+
+        a[target='_self']{
+            text-decoration: none;
+            color: gold;
+        }
+        p{
+            width: 400px;
+
+        }
+        p[id='abc']{
+            background-color: gray;
+        }
+
+        input[type='email']{
+            background-color: red;
+
+        }
+        /* li:nth-child(3){
+            background-color: teal;
+        } */
+        /* li:nth-child(EVEN){
+            background-color: teal;
+        }
+        li:nth-child(odd){
+            background-color: rgba(0, 128, 128, 0.588);
+        } */
+
+
+        /* li:nth-child(2n+3){
+            background-color: gray;
+        } */
+
+        /* li:nth-child(4n+3){
+            background-color: gold;
+        } */
+
+
+    </style>
+</head>
+<body>
+    <!-- class id tag -->
+    <a href="#" name="abc"> Click here</a>
+    <br>
+    <a href="" target="_blank">Click with target</a>
+    <br>
+    <a href="" target="_self">Click here with name</a>
+
+
+    <p id="abc">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto placeat, explicabo blanditiis voluptatem dolores iure impedit eius? Assumenda cupiditate ullam eius consectetur quam corrupti nostrum quaerat molestias. Libero, facilis. Nam.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio natus iste enim ad minima doloribus magni, aliquam repudiandae quos fugiat ducimus quod dolorum corporis nostrum facilis quaerat harum error ea?
+    </p>
+
+    <input type="text" placeholder="Enter your name " name="n1"> <br>
+    <input type="email" placeholder="Enter your email" name="n3"> <br>
+
+
+    <ul>
+        <li>black</li>
+        <li>white</li>
+        <li>Blue</li>
+        <li>Yellow</li>
+        <li>Green</li>
+        <li>Pink</li>
+        <li>Purple</li>
+        <li>Brown</li>
+        <li>black</li>
+        <li>white</li>
+        <li>Blue</li>
+        <li>Yellow</li>
+        <li>Green</li>
+        <li>Pink</li>
+        <li>Purple</li>
+        <li>Brown</li>
+    </ul>
+
+    <p></p>
+    <p></p>
+    <p></p>
+
+    <div></div>
+    <div></div>
+    <div></div>
+    <!-- <p></p> -->
+    <div></div>
+
+
+    <span></span>
+    <span></span>
+    <span></span>
+
+</body>
+
+</html>

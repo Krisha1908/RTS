@@ -1,0 +1,189 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contcat</title>
+</head>
+<style>
+     *{
+        box-sizing: border-box;
+    }
+    body{
+        margin: 0px;
+        padding: 0px;
+    }
+    ul{
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+        background-color:rgb(238, 150, 68);
+        overflow: hidden;
+    }
+    li{
+        float: left;
+
+    }
+    li a{
+        text-decoration: none;
+        display: block;
+        padding: 10px;
+        text-align: center;
+        width: 100px;
+        color: white;
+         
+    }
+    .dlist{
+        display: none; 
+        position: absolute; 
+        background-color:orange;
+        width: 100px;
+        /* z-index: 1; */
+    }
+    .dbutton:hover .dlist{
+        display: block;
+    }
+    .dlist a:hover{
+        background-color: rgb(81, 43, 9);
+        color: #bfc2c7;
+    }
+    .header{
+        width: 100%;
+        padding: 10px;
+        background-color: rgb(242, 133, 31);
+        height: 70px;
+        color: white;
+    }
+     h1{
+        text-align: center;
+        margin: 6px 0px;
+    }
+    .cnt
+    {
+        height: 580px;
+        width: 1710px;
+        /* opacity: 0.6; */
+            content: '';
+            position: absolute;
+            /* background-image: url(''); */
+            /* width: 100%;
+            height: 400px; */
+            background-size: cover;
+            background-position: center;
+            z-index: -1;
+            /* opacity: 0.5; */
+    }
+    .text
+    {
+        position: absolute;
+        top: 670px;
+    }
+    .txt1
+    {
+        font-size: 30px;
+    }
+    .box1
+    {
+        border: 1px solid orangered;
+        height: 60px;
+        width: 360px;
+        font-size: 18px;
+        position: absolute;
+        top: 120px;
+        left: 800px;
+        color: white;
+        background-color: orangered;
+        text-align: center;
+    }
+    .box2
+    {
+        border: 1px solid orangered;
+        height: 60px;
+        width: 360px;
+        font-size: 18px;
+        position: absolute;
+        top: 190px;
+        left: 800px;
+        color: black;
+        /* background-color: orangered; */
+        text-align: center;
+    }
+    .box2:hover
+    {
+        color: white;
+        background-color: orangered;
+    }
+
+       
+</style>
+<body>
+    <div class="header"><h1>Ayodhya Ram Mandir</h1></div>
+    <div class="nav">
+        <ul>
+            <li class="dbutton">
+                <a href="ram_mandir.html">Information</a>
+                 <div class="dlist">
+                    <a href="archi.html">About Architect</a>
+                    <a href="histoty.html">History</a>
+                </div>
+            </li>
+            <li class="dbutton">
+                <a href="">About</a>
+                <div class="dlist">
+                    <a href="">About trust</a>
+                    <a href="">Main Temple</a>
+                    <a href="contact.html">Conact us</a>
+                </div>
+            </li>
+            <li class="dbutton">
+                <a href="">Ayodhya</a>
+                <div class="dlist">
+                     <a href="">How to reach</a>
+                    <a href="visit.html">Places to Visit</a>
+                    <a href="stay.html">Where to stay</a>
+                 </div>
+            </li>
+            <!-- <li class="dbutton">
+                <a href="">About</a>
+                <div class="dlist">
+                    <a href="">1</a>
+                    <a href="">2</a>
+                    <a href="">3</a>
+                    <a href="">4</a>
+                </div>
+            </li>
+            <li class="dbutton">
+                <a href="">Login</a>
+                <div class="dlist">
+                    <a href="">1</a>
+                    <a href="">2</a>
+                    <a href="">3</a>
+                    <a href="">4</a>
+                </div>
+            </li> -->
+
+        </ul>
+    </div>
+
+
+    <div>
+        <img src="contact.jpeg" alt="" class="cnt">
+    </div>
+
+    <div class="text">
+        <p class="txt1">Director General</p>
+        <p class="txt2">Directorate of Tourism, Uttar Pradesh Rajarshi Purushottam Das Tandon 
+            Paryatan Bhavan C-13, Vipin Khand, Gomti Nagar, For Lucknow, Uttar Pradesh</p>
+        <p class="txt3">Phone : +91-522-4061369, Email : dg-upt@up.gov.in</p>  
+        <p class="txt4">For Booking / Tour Packages Related Query Contact : 0522- 4004402, 2612659</p>
+        <p class="txt5">For Tourism Policy Related Query Contact on this Email id :</p>  
+        <p class="txt6"> uptourismpolicy@gmail.com , investment.uptourism@gmail.com</p>
+
+        <p class="box1">Public Dealing Timing: 10:00 AM to 5:00 PM Working Days : Monday to Fridat</p>
+        <p class="box2">Web Information Manager Detalis</p>
+    </div>
+   
+
+</body>
+</html>

@@ -1,0 +1,231 @@
+<!-- <html>
+
+<head>
+    <title>Drop down menu</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            text-decoration: none;
+        }
+
+        .drplist {
+            display: none;
+            position: absolute;
+            z-index: 1;
+            background-color: #666;
+            width: 100px;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
+        }
+
+       .drpbtn:hover .drplist {
+            display: block;
+         }
+
+        .drplist a:hover {
+            background-color: #000;
+            color: #fff;
+        }
+
+        .header {
+            width: 100%;
+            padding: 10px;
+            background-color: gold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>DropDownMenu</h1>
+    </div>
+    <ul>
+        <li class="drpbtn"><a href="#">Home</a>
+            <div class="drplist">
+                <a href="#">Sub1</a>
+                <a href="#">Sub2</a>
+                <a href="#">Sub3</a>
+                <a href="#">Sub4</a>
+            </div>
+        </li>
+        <li class="drpbtn"><a href="#">Products</a>
+            <div class="drplist">
+                <a href="#">Sub1</a>
+                <a href="#">Sub2</a>
+                <a href="#">Sub3</a>
+                <a href="#">Sub4</a>
+            </div>
+        </li>
+        <li class="drpbtn"><a href="#">Services</a>
+            <div class="drplist">
+                <a href="#">Sub1</a>
+                <a href="#">Sub2</a>
+                <a href="#">Sub3</a>
+                <a href="#">Sub4</a>
+            </div>
+        </li>
+        <li class="drpbtn"><a href="#">About</a>
+            <div class="drplist">
+                <a href="#">Sub1</a>
+                <a href="#">Sub2</a>
+                <a href="#">Sub3</a>
+                <a href="#">Sub4</a>
+            </div>
+        </li>
+        <li class="drpbtn"><a href="#">Login</a>
+            <div class="drplist">
+                <a href="#">Sub1</a>
+                <a href="#">Sub2</a>
+                <a href="#">Sub3</a>
+                <a href="#">Sub4</a>
+            </div>
+        </li>
+    </ul>
+</body>
+
+</html> -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    body{
+        margin: 0px;
+        padding: 0px;
+    }
+    ul{
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+        background-color:red;
+        overflow: hidden;
+    }
+    li{
+        float: left;
+
+    }
+    li a{
+        text-decoration: none;
+        display: block;
+        padding: 10px;
+        text-align: center;
+        width: 100px;
+        color: white;
+         
+    }
+    .dlist{
+        display: none; 
+        position: absolute; 
+        background-color:red;
+        width: 100px;
+        /* z-index: 1; */
+    }
+    .dbutton:hover .dlist{
+        display: block;
+    }
+    .dlist a:hover{
+        background-color: rgb(142, 84, 84);
+        color: #bfc2c7;
+    }
+    .header{
+        width: 100%;
+        padding: 10px;
+        background-color: red;
+        height: 70px;
+        color: white;
+    }
+    h1{
+        text-align: center;
+        margin: 6px 0px;
+    }
+
+
+</style>
+<body>
+    <div class="header"><h1>Heading</h1></div>
+    <div class="nav">
+        <ul>
+            <li class="dbutton">
+                <a href="">Home</a>
+                <div class="dlist">
+                    <a href="">1</a>
+                    <a href="">2</a>
+                    <a href="">3</a>
+                    <a href="">4</a>
+                </div>
+            </li>
+            <li class="dbutton">
+                <a href="">Product</a>
+                <div class="dlist">
+                    <a href="">1</a>
+                    <a href="">2</a>
+                    <a href="">3</a>
+                    <a href="">4</a>
+                </div>
+            </li>
+            <li class="dbutton">
+                <a href="">Service</a>
+                <div class="dlist">
+                    <a href="">1</a>
+                    <a href="">2</a>
+                    <a href="">3</a>
+                    <a href="">4</a>
+                </div>
+            </li>
+            <li class="dbutton">
+                <a href="">About</a>
+                <div class="dlist">
+                    <a href="">1</a>
+                    <a href="">2</a>
+                    <a href="">3</a>
+                    <a href="">4</a>
+                </div>
+            </li>
+            <li class="dbutton">
+                <a href="">Login</a>
+                <div class="dlist">
+                    <a href="">1</a>
+                    <a href="">2</a>
+                    <a href="">3</a>
+                    <a href="">4</a>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+
+</body>
+</html>

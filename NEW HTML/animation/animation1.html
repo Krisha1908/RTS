@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            border: 5px solid pink;
+            animation-name: ani1;
+            animation-duration: 5s;
+            /* animation-iteration-count: 4; */
+            animation-iteration-count: infinite;
+        }
+        @keyframes ani1{
+            from{
+                width: 20px;
+                background-color: pink;
+            }
+            to{
+                /* width: 500px; */
+                transform: translate(100px) rotate(360deg);
+                border-radius: 50%;
+                background-color:yellow;
+            }
+
+        }
+    </style>
+
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

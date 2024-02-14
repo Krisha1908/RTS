@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *
+    {
+        box-sizing: border-box;
+    }
+    body
+    {
+        background-color: black;
+        color: white;
+    }
+    li
+    {
+        list-style-type: none;
+        padding: 30px 20px;
+        font-size: 20px;
+    }
+    .navbar
+    {
+        display: flex;   
+    }
+    h1
+    {
+       
+        font-size: 40px;
+    }
+    section
+    {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    header::before{
+            content: '';
+            position: absolute;
+            background-image: url('ff.jpg');
+            width: 100%;
+            height: 500px;
+            background-size: cover;
+            background-position: center;
+            z-index: -1;
+            opacity: 0.6;
+        }
+</style>
+<body>
+  <header>
+    <ul class="navbar">
+        <li>Home</li>
+        <li>Menu</li>
+        <li>About US</li>
+        <li>Contact Us</li>
+        <li>Review</li>
+    </ul>
+  </header>
+  <section>
+  <h1>Welcome To Taj Hotel</h1>
+    
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et nam debitis quisquam maiores velit magnam,
+    architecto qui distinctio! Officiis reprehenderit iste esse consectetur. Reprehenderit ea eaque voluptatibus excepturi,
+     sunt Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ullam quia, sapiente eaque est molestias quod nemo eius
+      fuga nam cum optio nisi praesentium eum quam nobis ducimus delectus quo.lore Lorem ipsum dolor sit amet consectetur adipisicing 
+      elit. Ex molestias unde voluptates excepturi deserunt, sapiente sit asperiores, illum similique at ratione laborum veritatis 
+      perferendis recusandae, natus iure vitae fuga quis!</p>
+  </section>   
+</body>
+</html>
