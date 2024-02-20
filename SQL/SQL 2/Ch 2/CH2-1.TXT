@@ -1,6 +1,5 @@
 SQL> 
 SQL> CL SCR
-
 SQL> REM 1 SORTING 2 TOP n ANALYSIS 3 RESTRICTION/SELECTION
 SQL> 
 SQL> 
@@ -419,7 +418,7 @@ EMPLOYEE_ID FIRST_NAME      LAST_NAME       EMAIL      PHONE_NUMBER         HIRE
 
 20 rows selected.
 
-SQL> SELECT * FROM EMPLOYEES ORDER BY COMMISSION_PCT ASC NULLS FIRST;
+SQL> SELECT * FROM EMPLOYEES BY COMMISSION_PCT ASC NULLS FIRST;
 
 EMPLOYEE_ID FIRST_NAME      LAST_NAME       EMAIL      PHONE_NUMBER         HIRE_DATE JOB_ID         SALARY COMMISSION_PCT MANAGER_ID DEPARTMENT_ID                                                     
 ----------- --------------- --------------- ---------- -------------------- --------- ---------- ---------- -------------- ---------- -------------                                                     
