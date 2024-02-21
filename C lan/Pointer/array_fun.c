@@ -24,3 +24,5 @@ void array(int a[],int num)
 }
 
 
+write a program to create a link list with three row storing a data 10,30,34
+and display the link list
