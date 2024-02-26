@@ -2,23 +2,16 @@
 // shift=1 
 // 20  30  40  50  10  
 
-
-
-
-
 // 10  20  30  40  50  
 // shift=3 
 // 40  50  10  20  30
-
-
-
 #include<stdio.h>
 int main()
 {
 
     int a[5];
     int i,shift,temp;
-    printf("Enter the 5 elements\n");
+    printf("Enter the 5 elements\n");//1 2 3 4 5 
 
     for (i = 0; i < 5; i++)
     {
@@ -32,7 +25,7 @@ int main()
 
     printf("\n");
 
-    printf("\nEnter the Shift:");
+    printf("\nEnter the Shift:");// 1
     scanf("%d",&shift);
 
     for ( i = 0; i < shift; i++)
@@ -52,3 +45,7 @@ int main()
     }
     return 0;
 }
+
+
+
+

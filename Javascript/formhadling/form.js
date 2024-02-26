@@ -15,7 +15,7 @@ function submitHandler(event) {
     {
         alert("Name , age and email are compulsory.");
     }
-    if(age<18)
+    else if(age<18)
     {
         alert("Age Should be greater then 18");
     }
