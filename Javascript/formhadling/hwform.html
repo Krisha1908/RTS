@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="hwfrom.js"></script>
+</head>
+<body>
+    <form>
+        <label for="emp_id">Employee ID : </label>
+        <input type="number" name="" id="emp_id">
+        <span id="iderror"></span><br><br>
+
+        <label for="emp_name">Employee Name : </label>
+        <input type="text" id="emp_name">
+        <span id="nameerror"></span><br><br>
+
+        <label for="emp_age">Employee Age : </label>
+        <input type="number" name="" id="emp_age"><br><br>
+
+        <label for="emp_salary">Employee Salary : </label>
+        <input type="number" name="" id="emp_sala"><br><br>
+
+        <label for="emp_blood">Employee Blood Group : </label>
+        <input type="text" name="" id="emp_blood"><br><br>
+
+        <label for="emp_tel">Employee Phone Number : </label>
+        <input type="tel" name="" id="emp_tel"><br><br>
+
+        <label for="emp_join">Employee Join Date :</label>
+        <input type="date" name="" id="emp_jDate"><br><br>
+
+        <input type="button" value="Submit" id="btn" onclick="valid()">
+
+
+        <p id="nameerror"></p>
+
+        <p id="result"></p>
+    </form>
+</body>
+</html>

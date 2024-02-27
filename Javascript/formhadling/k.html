@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="employee.js"></script>
+</head>
+<style>
+   body{
+      height: 100%;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 200px 0px;
+   }
+   form{
+      border: 1px solid #ccc;
+      padding: 40px;
+      background-color: white;
+      border-radius: 10px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   }
+   div{
+      margin-bottom: 10px;
+   }
+   button{
+      width: 100%;
+      cursor: pointer;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   }
+   #result{
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+   }
+   
+</style>
+
+<body>
+    <form onsubmit="submithandler(event)">
+        <div>
+            <label for="ID :">ID : </label>
+            <input type="number" id="id" placeholder="Enter Id">
+            <span id="iderror"></span>
+        </div>
+        <br>
+        <div>
+            <label for=" name:">NAME : </label>
+            <input type="text" id="name" placeholder="Enter Name">
+            <span id="nameerror"></span>
+         </div>
+         <br>
+         <div>
+            <label for="Age:">AGE : </label>
+            <input type="number" id="age" placeholder="Enter Age">
+            <span id="ageerror"></span>
+         </div>
+         <br>
+         <div>
+            <label for="salary:">SALARY : </label>
+            <input type="number" id="salary" placeholder="Enter Salary">
+            <span id="salaryerror"></span>
+         </div>
+         <br>
+         <div>
+            <label for="blood:">BLOOD GROUP: </label>
+            <input type="text" id="blood" placeholder="Enter Blood group">
+            <span id="blooderror"></span>
+         </div>
+         <br>
+         <div >
+            <button type="submit">SUBMIT</button>
+         </div>
+
+         <div id="result"></div>
+
+    </form>
+</body>
+</html>
