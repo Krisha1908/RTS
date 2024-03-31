@@ -1,0 +1,255 @@
+C C++  Java 
+    algo -> 
+
+    time ? 
+    space ? 
+
+
+DS -> 
+    *1) time complexity  -> time taken by your program 
+     2) space complexity -> space taken by your program 
+
+algo -> 
+    n item -> time 
+
+
+
+    5 -> 5 min 
+    10 -> 10 min 
+
+
+
+ data -> add read modify destroy
+ ---------------------------------------------------------------------------------------------
+
+                                        DS 
+        Linear DS                                           NoN Linear
+
+    Array Stack Queue Linked-List                           Tree Graph 
+
+---------------------------------------------------------------------------------------------
+C lang ->
+
+
+time complexity -> 
+                1) best 
+                2) avg 
+                3) worst 
+
+
+
+1cr data 
+
+1 2 3 4 5   -> 1 second 
+4 5 6 7 8   -> 4 second 
+7 8 9 10 11 -> 15 second 
+
+--------------------------------------------------------------------------------------------
+
+ 
+
+ for(i=1;i<=n;i++){
+    for(j=1;j<=n;j++){
+        //
+    }
+ }
+
+ log -> 
+
+-----------------------------------------------------------------
+
+    int a = 10;
+
+
+    a = 20;  
+
+
+array -> a -> hold more than 1 value 
+        -> array is a collection of same type of data 
+
+        int a[5]; // 5times -> 4byte =>  20byte -> 
+
+        index -> using index we can access array -> subscript 
+
+        1st item from the array -> a[0] { index starts with 0 , ends with size-1}
+
+        a[0] a[1] a[2] a[3] a[4]
+
+---------------------------------------------------------------------
+
+1. Insert 
+2. Display 
+3. Exit 
+
+1
+Enter location 
+1
+Enter data 
+10 
+
+1
+Enter location 
+1
+Enter data 
+20 
+
+1
+Enter location 
+2
+Enter data 
+100 
+
+
+
+1
+Enter location 
+2
+Enter data 
+200 
+
+
+1
+Enter location 
+2
+Enter data 
+500 
+
+
+
+1
+Enter location 
+5
+Enter data 
+5000 
+
+
+
+1
+Enter location 
+3
+Enter data 
+3000 
+
+
+[ 20, 500, 3000, 200, 100]
+
+
+---------------------------------------------------------------------
+
+10  20  30  40  50  
+shift=1 
+20  30  40  50  10  
+
+
+
+
+
+10  20  30  40  50  
+shift=3 
+40  50  10  20  30 
+
+
+
+-------------------------------------------------------------
+
+
+Why DS  ? 
+    - syllabus
+    - data org
+    - time complexity
+    - space complexity 
+
+
+
+space complexity ->
+        run -> memory consume -> 
+        variable : function : 
+
+time complexity ->
+     run -> time ? 
+     time taken by your program
+
+
+
+DS -> alogs -> 
+        TC SC -> 
+
+
+
+QUEUE 
+
+STACK    - linear DS 
+
+LiFo    :   Last In First Out 
+
+
+X Y Z A B C 
+
+
+
+Array 
+
+----------------------------------------------------------
+
+enter name 
+royal
+
+print -> layor 
+
+
+l
+a
+y
+o
+r
+
+---------------------------------------------------------------
+
+FiFo : First In First Out 
+FcFs : First Come First Serve 
+
+QUEUE :  movie ticket  
+         
+PRINTER : DS 5 , KM 5 , X 5
+
+TYPING : KEYBOARD 
+
+--------------------------------------------------------
+
+ Make Array Zero by Subtracting Equal Amounts
+
+Input: nums = [1,5,0,3,5]
+Output: 3
+Explanation:
+In the first operation, choose x = 1. Now, nums = [0,4,0,2,4].
+In the second operation, choose x = 2. Now, nums = [0,2,0,0,2].
+In the third operation, choose x = 2. Now, nums = [0,0,0,0,0].
+
+
+Input: nums = [1,5,0,3,5] { when u subtract u have to subtract with all but not if its zero }
+
+1 5 0 3 5 
+-1 
+0 4 0 2 4 
+-2 
+0 2 0 0 2 
+-2 
+0 0 0 0  0
+ 
+
+
+Example 2:
+
+Input: nums = [0]
+Output: 0
+Explanation: Each element in nums is already 0 so no operations are needed.
+
+
+----------------------------
+
+database -> sachin 
+
+search 
+    1) linear search -- beg -- end 
+    2) binary search 
+

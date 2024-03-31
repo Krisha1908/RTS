@@ -7,8 +7,8 @@ const getData = () => {
 
 
         setTimeout(()=>{
-            resolve("Data Fetched Successfully....");
-            // reject("Error While fetching Data....  ");
+            // resolve("Data Fetched Successfully....");
+            reject("Error While fetching Data....  ");
         },3000)
     })
 
@@ -18,9 +18,9 @@ const getData = () => {
 
     console.log(promise)
 
-    promise.then((data)=>{
-        console.log("data..",data)
-    })
+    // promise.then((data)=>{
+    //     console.log("data..",data)
+    // })
 
     promise.catch((error)=>{
         console.log("error..",error)
