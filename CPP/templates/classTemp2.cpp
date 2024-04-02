@@ -10,7 +10,7 @@ public:
         cout<<"Test 1: "<<a<<endl;
     }
 
-//function template
+
     void test2(K a){
 
         cout<<"Test 2: "<<a<<endl;
