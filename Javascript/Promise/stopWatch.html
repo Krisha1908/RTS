@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="stopWatch.js"></script>
+    <style>
+        body
+        {
+             background-color: black;
+
+        }
+        p
+        {
+            color: darkturquoise;
+            position: absolute;
+            font-size: 200px;
+            left: 500px;
+            top: 200px;
+        }
+        #txt
+        {
+            color: darkturquoise;
+            position: absolute;
+            font-size: 200px;
+            left: 500px;
+            top: 200px;
+        }
+        #stopWatch
+        {
+            height: 50px;
+            width: 100px;
+            font-size: 20px;
+            position: absolute;
+            left: 800px;
+            top: 200px;
+        }
+    </style>
+</head>
+<body>
+    <button id="stopWatch" onclick="start()">START</button>
+    <p>00:00:00</p>
+    <div>
+        <p id="txt"> </p>
+    </div>
+</body>
+</html>
