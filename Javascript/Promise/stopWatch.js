@@ -1,14 +1,59 @@
-function start()
-{
-   var start = document.getElementById("start");
-   var reset = document.getElementById("reset");
-   
-   reset.addEventListener("click" , () =>{
-    
-   })
-    var time = hour + ":" + mins + ":" + sec;
-    document.getElementById("txt").innerHTML = time;
+let sec = 0;
+let hour = 0;
+let min = 0;
+
+let timer = false;
+
+function Start(){
+    timer = true;
+    myfun();
     
 }
 
-setInterval(start,1000);
+function Stop(){
+    timer = false;
+    myfun();
+}
+
+function Reset(){
+    timer = false;
+    sec = 0;
+    hour = 0;
+    min = 0;
+
+}
+
+function myfun(){
+
+    if(timer === true){
+        sec = sec + 1;
+    }
+    if(sec == 60){
+        min = min + 1;
+        sec = 0;  
+    }
+    if(min == 60){
+        hour = hour + 1;
+        min = 0;
+    }
+
+    // if(hour<10)
+    // {
+    //   hour = "0" +hour;
+    // }
+    // if(min<10)
+    // {
+    //   min = "0" +min;
+    // }
+    // if(sec<10)
+    // {
+    //     sec = "0" +sec;
+    // }   
+
+    document.getElementById("sec").innerHTML = sec;
+    document.getElementById("min").innerHTML = min;
+    document.getElementById("hr").innerHTML = hour;
+    setTimeout("myfun()",10);
+
+
+}
