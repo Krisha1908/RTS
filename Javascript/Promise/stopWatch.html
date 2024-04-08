@@ -16,7 +16,7 @@
             color: darkturquoise;
             position: absolute;
             font-size: 200px;
-            left: 500px;
+            left: 550px;
             top: 200px;
         }
         #txt
@@ -25,21 +25,45 @@
             position: absolute;
             font-size: 200px;
             left: 500px;
-            top: 200px;
+            top: 150px;
+            border: 1px solid darkturquoise;
+            height: 400px;
+            width: 800px;
+            border-radius: 14px;
         }
-        #stopWatch
+        #start
         {
             height: 50px;
             width: 100px;
             font-size: 20px;
             position: absolute;
-            left: 800px;
+            left: 670px;
             top: 200px;
+            border: 3px solid darkturquoise;
+            border-radius: 10px;
+            color: darkturquoise;
+            background-color: black;
+        }
+        #reset
+        {
+            height: 50px;
+            width: 100px;
+            font-size: 20px;
+            position: absolute;
+            left: 990px;
+            top: 200px;
+            border: 3px solid darkturquoise;
+            border-radius: 10px;
+            color: darkturquoise;
+            background-color: black;
         }
     </style>
 </head>
 <body>
-    <button id="stopWatch" onclick="start()">START</button>
+    <button id="start" onclick="start()">START</button>
+    <button id="reset" onclick="reset()">RESET</button>
+
+
     <p>00:00:00</p>
     <div>
         <p id="txt"> </p>
