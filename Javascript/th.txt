@@ -169,3 +169,48 @@ string is immutable in javascript
 var data "naman"
 //reverse...
 //palindrome        
+
+
+promise: then:
+
+realay game -->
+
+petrol pump -->
+
+car --> petrol --> payment -->
+car waiting --> ->
+
+FRONTEND:---
+
+    js : FRONTEND
+    dynamic data...
+BACKEND:---
+
+
+
+JAVA :
+<---->
+js : 
+
+
+
+API : applications programming interface
+
+
+
+andorind : zomato : google map :
+GOOGLE -->MAP API __ zomato --> integration
+
+
+wether app : APIS
+
+URL : 
+API -->
+GET API : -->data fetch 
+POST API :-->POST DATA
+DELETE API :-->DELETE DATA
+PUT API :-->UPDATE DATA
+PATCH :-->UPDATE DATA
+
+
+FETCH:---
