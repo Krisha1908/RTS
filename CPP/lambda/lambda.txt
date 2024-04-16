@@ -1,0 +1,68 @@
+#include<iostream>
+#include<string>
+
+using namespace std;
+//#lambda function
+//it is an anonymous function
+//it is a function without a name
+//syntax: [](){}; //empty lambda function
+//[]: capture list
+//(): parameter list
+//{}: function body
+//full signature of lambda function
+// greet =[]()->{}
+
+
+
+
+int main(){
+
+
+    //lambda function without param and without return type
+
+    //auto : type inference
+    div();
+    auto greet =[](){
+        cout<<"Hello World"<<endl;
+    };
+
+    auto add = [](int a,int b){
+        return a+b;
+    };
+
+    auto isAdult = [](int age){
+
+        return age>=18; // return true or false
+    };
+    //can we create lambda without body
+
+    //auto greet1 =[](int a,int b)->a+b;error
+    
+
+    greet();
+    cout<<"addition = "<<add(10,20);
+    if(isAdult(2)){
+        cout<<"\n Adult"<<endl;
+    }else{
+        cout<<"\n Not Adult"<<endl;
+    }
+
+
+
+    auto outer =[](){
+
+            auto inner =[](){
+                cout<<"Inner lambda"<<endl;
+            };
+
+            cout<<"Outer lambda"<<endl;
+            inner();
+
+    };
+
+    outer();
+
+
+
+
+}
