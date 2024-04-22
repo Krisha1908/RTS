@@ -2,20 +2,20 @@
 using namespace std;
 
     
-void print(int num)
+int   print(int num)
 {
+    int i;
     if(num==0)
     {
-        return ;
+        return 1;
     }
-    else
-    {
-        print(num-1);
-    }
-
-    cout<<"\n"<<num;
+    return num * print(num-1);
+    
 }
+
 int main()
 {
-    print(10);
+    
+    int ans = print(3);
+    cout<<"ANS = "<<ans;
 }

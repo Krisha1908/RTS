@@ -1,0 +1,25 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int no,i,sum=0,k;
+clrscr();
+printf("\n Enter one no.: ");
+scanf("%d",&no);
+k=no;
+
+while(no>0)
+{
+i=no%10;
+sum=sum+(i*i*i);
+no=no/10;
+}
+if(sum==k)
+printf("\nIt is armstrong no.");
+else
+printf("\nIt is not armstrong no.");
+getch();
+}
+Output:--
+Enter one no.: 153
+It is armstrong no.
