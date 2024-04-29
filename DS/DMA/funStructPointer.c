@@ -55,6 +55,8 @@ void add()
 
         s->per = (s->c + s->cpp + s->java) /3.0;
 
+        
+
     }
     
 }
