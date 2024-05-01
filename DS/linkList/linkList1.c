@@ -1,0 +1,38 @@
+#include<stdio.h>
+#include<stdlib.h>
+struct node
+{
+    int data;
+    struct node *next;
+};
+
+struct node *head = NULL,*last = NULL;
+
+void addNode(int num)
+{
+    struct node *temp;
+    if(head==NULL)
+    {    head = malloc(sizeof(struct node));
+        head->data = num;
+        head->next = NULL;
+        last = head;
+    }
+    else
+    {
+        temp = malloc(sizeof(struct node));
+        temp->data = num;
+        temp->next = NULL;
+        last->next = temp;
+        last = temp;
+    }
+}
+int main()
+{   
+    addNode(100);
+    addNode(200);
+    addNode(300);
+
+
+    printf("\n");
+   return 0; 
+}

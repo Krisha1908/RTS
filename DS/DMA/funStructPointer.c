@@ -46,7 +46,7 @@ void add()
     struct students *s;
     s = malloc(sizeof(struct students));
    
-    for (i = 0; i < 5; i++)
+    for (i = 0; i < 2; i++)
     {
         printf("Enter the Name of Students : ");
         scanf("%s",s->name);
@@ -66,7 +66,7 @@ void display()
     int i;
     struct students *s;
     s = malloc(sizeof(struct students));
-    for ( i = 0; i < 5; i++)
+    for ( i = 0; i < 2; i++)
     {
         printf("\nNAME = %s\n C = %d\n CPP = %d\n JAVA = %d\n PER = %f",s->name,s->c,s->cpp,s->java,s->per);
     }
@@ -90,5 +90,7 @@ int main()
     else
     {
         printf("INVALID");
-    }    
+    }   
+
+    printf("\n"); 
 }
