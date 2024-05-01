@@ -46,6 +46,21 @@ void display()
         
     }
 }
+
+void sum()
+{
+    int sum=0;
+    struct node *p = head;
+   
+    while(p != NULL)
+    {
+        sum = sum + p->data;
+        p = p->next;
+    }
+     printf("\nSUM = %d",sum);
+
+       
+}
 int main()
 {   
    
@@ -53,7 +68,7 @@ int main()
     addNode(200);
     addNode(300);
     display();
-//  printf("%d %d %d",head->data,head->next->data,head->next->next->data);
+    sum();
 
     printf("\n");
    return 0; 

@@ -46,6 +46,10 @@ void display()
         
     }
 }
+int search()
+{
+
+}
 int main()
 {   
    
@@ -53,7 +57,8 @@ int main()
     addNode(200);
     addNode(300);
     display();
-//  printf("%d %d %d",head->data,head->next->data,head->next->next->data);
+    search(100);
+
 
     printf("\n");
    return 0; 

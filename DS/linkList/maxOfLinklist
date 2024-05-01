@@ -46,6 +46,11 @@ void display()
         
     }
 }
+void max()
+{
+    struct node *p = head;
+
+}
 int main()
 {   
    
@@ -53,7 +58,8 @@ int main()
     addNode(200);
     addNode(300);
     display();
-//  printf("%d %d %d",head->data,head->next->data,head->next->next->data);
+    max();
+
 
     printf("\n");
    return 0; 
