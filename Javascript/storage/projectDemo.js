@@ -45,6 +45,7 @@ const loadProducts = () =>{
         button.addEventListener("click",()=>{
 
             localStorage.setItem("cart",JSON.stringify(product[i]))
+
             alert("product added to cart ->"+product[i].name)
         })
 

@@ -29,10 +29,12 @@ var x = user.find((u)=>{
 if(x)
 {
     alert("Login Sucessful!!");
+    document.cookie = email;
+
 }
 else
 {
-    alert("Try again!");
+    alert("INVALID.....Try again!.....");
 }  
    
 }
