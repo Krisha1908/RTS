@@ -8,12 +8,29 @@
         .highlight {
             color: red; 
         }
+
+    .num{
+        display: flex;
+        color:black;
+       
+    }
+    h2{
+        font-size: 13px;
+      
+    }
     </style>
 </head>
 <body>
-    <h4 id="sentence">HI THIS IS INDIA</h4>
+    
+    <h4 id="sentence">Hi , I am India </h4>
     <label>Enter letters : </label>
-    <input type="text" name="" id="textMark" onkeypress="highlightWord()">
-    <script src="./highLightWord.js"></script>
+    <input type="text" name="" id="textMark" onkeyup="highlightWord()" ><br><br>
+    <input type="button" value="FINISH" onclick="end()">
+    <p id="st"></p>
+    <p id="et"></p>
+    <p id="diff"></p>
+
+
+    <script src="./highLightWord2.js"></script>
 </body>
-</html>
+</html> 
