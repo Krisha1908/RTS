@@ -1,1 +1,3 @@
 brew install openjdk@11
+// any static method can be called with class name or withput class name inside
+	// static method
