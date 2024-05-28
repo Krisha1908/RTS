@@ -1,3 +1,11 @@
 brew install openjdk@11
 // any static method can be called with class name or withput class name inside
 	// static method
+
+
+    intance variabel:-
+     instance variable...
+	instance variable not need to intilize compul....
+	 non static..
+ can not use non static instance variable inside static method...
+
