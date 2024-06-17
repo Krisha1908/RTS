@@ -1,11 +1,124 @@
-brew install openjdk@11
-// any static method can be called with class name or withput class name inside
-	// static method
+Java Installation:
+    1.JDK - Java Development kit
+            For running java program 
+    2.JRE - Java Runtime Enviorment 
+            Help in executing program
+    3.JVM - Java Virtual MAchine
+
+    1.Compilation:
+    Source Code - .java (save) --> Compiler (IN JDK) --> Covert into byte code(JRE) - .class(save)
+    2.Execution:
+    byte code --> JVM --> Native Language(computer lan - 0 and 1)
 
 
-    intance variabel:-
-     instance variable...
-	instance variable not need to intilize compul....
-	 non static..
- can not use non static instance variable inside static method...
+Static -  Without creating an object we can execute our class
 
+
+theory:
+--> Any non-Static Method can be called only with class object if we are calling from static Method , but if we
+    want to call non-static method from non-static no need of object
+--> Any static method can be called with class name or Without class name inside
+
+
+*Instance Variable:
+    Instance Variable need not to intilized compulsory
+    If Instance Variable is not assigned , then it will give default value
+    Can not use non-static Instance Variable in Static Method
+    both Static and non-static Variable Instance Variable can be use in non-static Method
+    n copy will generate for non-static Instance Variable
+    Only one copy will generate for static Instance Variable
+
+
+*Local Variable:
+    Local Variable need to be intilized compulsory
+    Can not create Static Variable inside the main Method due to Heap and Stack concepts
+
+*Scanner;
+    Scanner is itself a class
+    we can use it by Making an object
+    for taking an input we use System.in  as an Argument--> Inputstream --> console
+    out  = printstream
+    in = inputstream
+
+*OOPS
+1. Encapsulation:
+    1.Counstrutor:-
+        Same name As class name
+        Types:
+        1.default
+        2.parameter
+    To Intialize Instance Variable
+
+    2.Data Hiding:
+        1.Accsess 
+            Private
+            Default
+            Protected
+            Public
+        2.Non-Accsess Modifier
+            Static
+            Final:
+                Final = constant
+                If we assigned the value using final class then it can not be reassinged
+                Final CLass can not be inherited
+
+2. Inheritance:
+    A child class Can Accsess the Property of Parent class
+    We can connect class with Extends Keyword.
+
+** Construtor With Inheritanc:
+
+1.
+        parent has Default Construtor
+        Child has Default Construtor 
+
+    Then First parent class then child class Property will execute
+
+2.
+        parent has parameterized Construtor
+        child has parameterized Construtor
+    
+    Then if We want Accsess the the Property of parent Then in child class we have to use super(pass parameter)keyword.
+
+3.       
+        parent has parameterized Construtor
+         parent has also Default Construtor
+
+          child has parameterized Construtor
+             Child has Default Construtor 
+
+    then super keypword is not compulsory to execute parent Protected.
+
+** polymorephisam :
+
+Many from of the function
+ 
+1. complie time poly , early biniding , static bininding , method overloaing()
+2. run time poly , lazy biniding , dynamic biniding , method overriding
+
+
+1. Method OverLoadig : 
+-->We will have same name of method in same class or parent class or child class but with different parameters is called METHOS OVERLOADING.
+
+2.Method OverRiding : 
+-->child class have same method of parent class called overriding....
+it should match signature
+same method name , same para , same return type* -->(optional)
+
+access modifiers
+return type
+method name
+param
+
+Accsess Modifier can be different
+if parent class have default modifier -> child class can be default,proected,public
+if parent class have Protected modifier - >Protected,public
+***Private modifier can not be OverRiding
+final modifier can not be overriding
+
+**Abstraction :--
+we can achive ; using 
+abstract class and abstract method...
+interface
+
+abstract methods can be created inside abstract only...
