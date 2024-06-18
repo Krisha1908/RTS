@@ -117,8 +117,32 @@ if parent class have Protected modifier - >Protected,public
 final modifier can not be overriding
 
 **Abstraction :--
-we can achive ; using 
-abstract class and abstract method...
-interface
+    it is using for data-hiding.
+    Abstraction Method must be overRide.
+    In Abstraction class we can create non-Abstraction method.
+    Abstraction Method can not be call by object.
+    By child class object we call Non-Abstraction.
+    abstract methods can be created inside abstract only...
+    if we don't want to create body inside parent class 
+    we can achive  using abstract class and abstract method...
+    abstract methods can be created inside abstract only...
 
-abstract methods can be created inside abstract only...
+
+    CLASS - CLASS ---> Extends
+    CLASS - INTERFACE --->IMPLEMENTS
+    INTERFACE - INTERFACE ---> EXTENDS
+
+**Interface :---
+    Fully Abstract class
+    All Method are public abstract
+    intefrface ==== class.
+    //all instancr variable are public final static
+	//public final static int x =10; ==== int x =10;
+    can be multiple IMPLEMENTS (class)
+
+
+
+
+
+
+
