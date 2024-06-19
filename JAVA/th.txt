@@ -141,6 +141,37 @@ final modifier can not be overriding
     can be multiple IMPLEMENTS (class)
 
 
+**run time polymorephisam | polymorphic object
+    reference of parent class and object of child class
+    //refer = Object | memory
+    //Run r = new Running();
+
+**Types of Interface
+    1. Normal Interface
+    2. functional Interface ->Only one method
+    -->which interface has only 1 method called interface..
+    3. Marker Interface ->Empty mostly
+    -->interface which has no method and no variables...
+	//Serilizable
+
+**If we want to crete body inside the INTERFACE then we can use below Keywords
+
+    1.default
+    -->this is Keyword not a access modifier.
+    --> reference of parent class and object of child class
+    2.Static 
+    -->we can create object of static method directly from class name 
+    -->Non-access modifier  
+
+    1.Default:
+        With help of Default Keyword ,it will not be compulsory to override in class
+        We can call it by Referene of parent and object of class
+    2.Static:
+        With this non-Accsess Modifier it will not be compulsory to override in class
+        we can call it by it class name
+
+
+
 
 
 
