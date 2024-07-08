@@ -11,6 +11,10 @@ Java Installation:
     byte code --> JVM --> Native Language(computer lan - 0 and 1)
 
 
+'' --> CHARCTER
+" " -->STRING
+
+
 Static -  Without creating an object we can execute our class
 
 
@@ -171,6 +175,7 @@ final modifier can not be overriding
         we can call it by it class name
 
 
+String is immutable in JAVA
 
 
 
