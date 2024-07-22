@@ -176,8 +176,15 @@ final modifier can not be overriding
 
 
 String is immutable in JAVA
+StirngBuffer is Mutable in JAVa
 
+**Arrays**
 
+VarArgument:-
+In simple Array,if we create function and in it if we take three argument,then at the time of calling,we have to
+compulsory take three argument
+but idf use VarArgument = int ...a 
+then it will not compulsory to take only taken two or three Argument.
 
 
 
