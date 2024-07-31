@@ -15,7 +15,7 @@ int main()
     int start = 9; 
     for (i = 0; i < 8; i++)
     {
-        printf("\nSrc - Dest");
+        printf("\nSrc - Dest : ");
         scanf("%d%d", &e[i].src, &e[i].dest);
     }
 
