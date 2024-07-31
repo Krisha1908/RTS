@@ -25,6 +25,7 @@ int main()
     {
         if(visited == 4){
             break; 
+            
         }
         if(e[i].src == start ){
             visited++;
